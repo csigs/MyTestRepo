@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.1.4</Version>
+    <Authors>sunggonm</Authors>
+    <Company>Microsoft</Company>
+    <Product>Payload Service</Product>
+    <Description>Payload service mock client</Description>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Localization.Juno.Common.Data.Repository" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Juno.Payload.Client\Juno.Payload.Client.csproj" />
+    <ProjectReference Include="..\Juno.Payload.Contracts\Juno.Payload.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

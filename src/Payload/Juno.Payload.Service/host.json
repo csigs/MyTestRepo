@@ -1,0 +1,8 @@
+{
+  "version": "2.0",
+  "http": {
+    "routePrefix": "api",
+    "maxOutstandingRequests": 30,
+    "maxConcurrentRequests": 20
+  }
+}

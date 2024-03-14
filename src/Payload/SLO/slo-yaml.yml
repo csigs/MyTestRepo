@@ -1,0 +1,74 @@
+datasources:
+  - id: qualityslo
+    type: mdm
+    accountids:
+      - JunoTest
+slo-groups:
+  - slos:
+      - targets:
+          - comparator: gte
+            target-value: '99.99'
+        name: Success Rate
+        source-id: qualityslo
+        namespace: JunoTestWUS2Ver1v0
+        description: 99.99% of requests in the last 15 minutes were successful
+        category: Success Rate
+        signal: >-
+        metric("PayloadStatus").dimensions("CustomerId" as CustomerResourceId, "InstanceId" as LocationId, "StatusCode").samplingTypes("Count")
+        | where StatusCode != "500"
+        | summarize SuccessCount = sum(Count) by CustomerResourceId
+        | zoom SuccessCount15m = sum(SuccessCount) by 15m
+        | join (metric("PayloadStatus").dimensions("CustomerId" as CustomerResourceId, "InstanceId" as LocationId).samplingTypes("Count" as TotalCount)
+        | zoom TotalCount15m = sum(TotalCount) by 15m)
+        | project Value = (replacenulls(SuccessCount15m, 0) / TotalCount15m) * 100.0
+        window: PT15M
+      - targets:
+          - target-percentile: '50'
+            description: >-
+              Requests in the last 5 minutes are served in under 1000
+              milliseconds at the 50th percentile
+            comparator: lt
+            target-value: '1000'
+          - description: >-
+              Requests in the last 5 minutes are served in under 1200
+              milliseconds at the 75th percentile
+            comparator: lt
+            target-value: '1200'
+            target-percentile: '75'
+          - description: >-
+              Requests in the last 5 minutes are served in under 1500
+              milliseconds at the 90th percentile
+            comparator: lt
+            target-value: '1500'
+            target-percentile: '90'
+          - description: >-
+              Requests in the last 5 minutes are served in under 1800
+              milliseconds at the 99th percentile
+            comparator: lt
+            target-value: '1800'
+            target-percentile: '99'
+          - description: >-
+              Requests in the last 5 minutes are served in under 2000
+              milliseconds at the 99.9th percentile
+            comparator: lt
+            target-value: '2000'
+            target-percentile: '99.9'
+        name: Latency
+        source-id: qualityslo
+        namespace: JunoTestWUS2Ver1v0
+        description: Latency in the Payload API
+        category: Latency
+        signal: >-
+        metric("PayloadLatency")
+        .dimensions("CustomerId" as CustomerResourceId, "LocationId", "ResponseTime")
+        .samplingTypes("50th percentile" as P50,
+        "P75" as P75,
+        "90th percentile" as P90,
+        "99th percentile" as P99,
+        "P99.9" as P999,
+        "P99.99" as P9999).resolution(5m)
+        window: PT5M
+    name: PayloadSLO
+    state: Test
+    component-id: 5ea5d536-e432-4562-805f-e7688d4147f0
+service-id: 0c668a5a-9f44-420b-b60b-a75d85f59d8c

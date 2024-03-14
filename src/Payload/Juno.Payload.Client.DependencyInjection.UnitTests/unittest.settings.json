@@ -1,0 +1,4 @@
+{
+  "PayloadClientOptions:ServiceUri": "https://localhost:7071/",
+  "PayloadClientOptions:MSIScope": "./default"
+}

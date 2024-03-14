@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>3.2.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Juno.Common.Contracts" Version="2.5.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Juno.Payload.Client\Juno.Payload.Client.csproj" />
+  </ItemGroup>
+
+</Project>

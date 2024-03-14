@@ -1,0 +1,12 @@
+﻿{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+    "AttachmentBlobStorageConnStr": "UseDevelopmentStorage=true",
+    "AttachmentBlobStorageContainerName": "payload-attachments",
+    "PayloadDocDbEndpointUri": "https://junounittests.documents.azure.com:443/",
+    "PayloadDocDbPrimaryKey": "add during local testing and remove during check in",
+    "PayloadDatabase": "Payload"
+  }
+}

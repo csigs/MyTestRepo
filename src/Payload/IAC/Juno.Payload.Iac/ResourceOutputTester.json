@@ -1,0 +1,24 @@
+﻿{
+
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+
+  },
+  "resources": [],
+  "outputs": {
+    "RefOut": {
+      "value": "[reference('/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/JunoPayloadPoc/providers/Microsoft.Web/sites/juno-pl-fn-eastus-poc','2018-11-01')]",
+      "type": "object"
+    },
+    "refOut2": {
+      "type": "object",
+      "value": "[listkeys('/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/JunoPayloadPoc/providers/Microsoft.Web/sites/juno-pl-fn-eastus-poc/host/default','2018-11-01')]"
+    },
+    "refOut3": {
+      "type": "string",
+      "value": "[listkeys('/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/JunoPayloadPoc/providers/Microsoft.Web/sites/juno-pl-fn-eastus-poc/host/default','2018-11-01').functionKeys.default]"
+    }
+
+  }
+}

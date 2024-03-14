@@ -1,0 +1,926 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "bcdrEnabled": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "isProd": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "aadClientId": {
+      "type": "string"
+    },
+    "aadTenant": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "location-region1": {
+      "type": "string",
+      "defaultValue": "westus2",
+      "metadata": {
+        "description": "Name of an azure region"
+      }
+    },
+    "location-region2": {
+      "type": "string",
+      "defaultValue": "eastus",
+      "metadata": {
+        "description": "Name of an Azure region"
+      }
+    },
+    "region1State": {
+      "type": "string",
+      "allowedValues": [
+        "Enabled",
+        "Disabled"
+      ]
+    },
+    "region2State": {
+      "type": "string",
+      "allowedValues": [
+        "Enabled",
+        "Disabled"
+      ]
+    },
+    "aadAuthEnabled": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "common-KeyVault-Region1": {
+      "type": "string"
+    },
+    "common-KeyVault-Region2": {
+      "type": "string"
+    },
+    "common-AppPlanId-Region1": {
+      "type": "string"
+    },
+    "common-AppPlanId-Region2": {
+      "type": "string"
+    },
+    "CustomerResourceId": {
+      "type": "string",
+      "defaultValue": "0c668a5a-9f44-420b-b60b-a75d85f59d8c"
+    },
+    "GenevaMonitoringAccountName": {
+      "type": "string"
+    },
+    "GenevaMonitoringNamespaceName": {
+      "type": "string"
+    },
+    "GenevaInitializationType": {
+      "type": "string"
+    },
+    "GenevaTenantRoleName": {
+      "type": "string"
+    },
+    "GenevaRoleName": {
+      "type": "string"
+    },
+    "appName": {
+      "type": "string",
+      "defaultValue": "juno",
+      "metadata": {
+        "description": "Short name of the app or service"
+      }
+    },
+    "uniqueSuffix": {
+      "type": "string",
+      "defaultValue": "pl",
+      "metadata": {
+        "description": "Unique Suffix to use for the azure resources of the app or service"
+      }
+    },
+    "environment": {
+      "type": "string",
+      "allowedValues": [
+        "poc",
+        "poc1",
+        "dev",
+        "int",
+        "uat",
+        "prod"
+      ],
+      "metadata": {
+        "description": "The name of the environment"
+      }
+    },
+    "storageAccountType": {
+      "type": "string",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_GRS",
+        "Premium_LRS"
+      ],
+      "defaultValue": "Standard_LRS",
+      "metadata": {
+        "description": "Replication option for the VM image storage account"
+      }
+    },
+    "kind": {
+      "type": "string",
+      "defaultValue": "StorageV2"
+    },
+    "accessTier": {
+      "type": "string",
+      "defaultValue": "Hot"
+    },
+    "largeFileSharesState": {
+      "type": "string",
+      "defaultValue": "Disabled"
+    },
+    "payloadDatabaseName": {
+      "type": "string",
+      "defaultValue": "Payload",
+      "metadata": {
+        "description": "The name of the database used by Payload service"
+      }
+    },
+    "payloadDatabaseUrlConfigName": {
+      "type": "string",
+      "defaultValue": "PayloadDocDbEndpointUri",
+      "metadata": {
+        "description": "The config name for the database used by Payload service"
+      }
+    },
+    "payloadDatabaseKeyConfigName": {
+      "type": "string",
+      "defaultValue": "PayloadDocDbPrimaryKey",
+      "metadata": {
+        "description": "The config name for the database used by Payload service"
+      }
+    },
+    "payloadDatabaseNameConfigName": {
+      "type": "string",
+      "defaultValue": "PayloadDatabase",
+      "metadata": {
+        "description": "The config name for the database used by Payload service"
+      }
+    },
+    "prereq-KeyVault-Region1": {
+      "type": "string"
+    },
+    "prereq-KeyVault-Region2": {
+      "type": "string"
+    },
+    "sharedThroughput": {
+      "type": "int",
+      "defaultValue": 400,
+      "minValue": 400,
+      "maxValue": 1000000,
+      "metadata": {
+        "description": "The throughput for the database to be shared"
+      }
+    },
+    "datarefContainer": {
+      "type": "string",
+      "defaultValue": "DataRefs",
+      "metadata": {
+        "description": "The name of the container used by Payload service"
+      }
+    },
+    "metadataContainer": {
+      "type": "string",
+      "defaultValue": "Metadata",
+      "metadata": {
+        "description": "The name of the container used by Payload service"
+      }
+    },
+    "payloadsContainer": {
+      "type": "string",
+      "defaultValue": "Payloads",
+      "metadata": {
+        "description": "The name of the container used by Payload service"
+      }
+    },
+    "payloadApiUrlSecretName": {
+      "type": "string",
+      "defaultValue": "pl-Api-Url"
+    },
+    "payloadApiKeyUrlSecretName": {
+      "type": "string",
+      "defaultValue": "pl-Api-Key"
+    },
+    "prereqkvUrlConfigName": {
+      "type": "string",
+      "defaultValue": "PreReqKeyVaultUrl"
+    },
+    "appDns": {
+      "type": "string"
+    },
+    "prereq-KV-Id": {
+      "type": "string"
+    },
+    "appDnsCertSecretName": {
+      "type": "string",
+      "defaultValue": "payload-api-ssl"
+    },
+    "netFrameworkVersion": {
+      "type": "string",
+      "defaultValue": "v6.0",
+      "metadata": {
+        "description": ".NET Framework version."
+      }
+    },
+    "AttachmentBlobStorageContainerNameConfigValue": {
+      "type": "string",
+      "defaultValue": "payload-attachments"
+    },
+    "appInsightsTargetWorkspaceResourceGroup": {
+      "type": "string",
+      "defaultValue": "[concat('JunoDW',parameters('environment'))]"
+    },
+    "allowIpRules": {
+      "type": "array",
+      "defaultValue": [
+        "20.37.158.0/23",
+        "52.150.138.0/24",
+        "20.42.5.0/24",
+        "20.41.6.0/23",
+        "40.80.187.0/24",
+        "40.119.10.0/24",
+        "40.82.252.0/24",
+        "20.42.134.0/23"
+      ]
+    },
+    "aadAuthSecret": {
+      "type": "string"
+    },
+    "aadAuthAllowedAudiences": {
+      "type": "array"
+    },
+    "KeyVaultTemplateVersion": {
+      "type": "string",
+      "defaultValue": "2.0.0"
+    },
+    "FunctionAppTemplateVersion": {
+      "type": "string",
+      "defaultValue": "3.0.0"
+    },
+    "storageAccountTemplateVersion": {
+      "type": "string",
+      "defaultValue": "2.0.0"
+    },
+    "pvtEndpointConnSubnetName": {
+      "type": "string",
+      "defaultValue": "pvtEndpointConn",
+      "metadata": {
+        "description": "Name of subnet where resources of type Private Endpoint Connection will connect to."
+      }
+    },
+    "websitesSubnetName": {
+      "type": "string",
+      "defaultValue": "websites",
+      "metadata": {
+        "description": "Name of subnet to connect web apps/function apps to."
+      }
+    },
+    "armTemplateSpecSubscriptionId": {
+      "type": "string"
+    },
+    "armTemplatesRgName": {
+      "type": "string",
+      "defaultValue": "ArmTemplates"
+    },
+    "privateDnsZoneSubscriptionId": {
+      "type": "string"
+    },
+    "privateDnsZoneResourceGroupName": {
+      "type": "string",
+      "defaultValue": "PrivateDnsZones"
+    },
+    "servicePackageLink": {
+      "type": "string"
+    },
+    "deployFnApp": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "regionSuffixRegion1": {
+      "type": "string"
+    },
+    "regionSuffixRegion2": {
+      "type": "string"
+    }
+  },
+  "variables": {
+    "appInsightsApiVersion": "2020-02-02-preview",
+    "webAppApiVersion": "2018-11-01",
+    "keyVaultApiVersion": "2016-10-01",
+    "storageApiVersion": "2019-06-01",
+    "cosmosDBApiVersion": "2015-04-08",
+    "trafficManagerApiVersion": "2018-08-01",
+    "templateSpecDeploymentApiVersion": "2020-06-01",
+    "userAssignedIdentityApiVersion": "2018-11-30",
+    "KeyVaultWithPrivateEndpointId": "[resourceId(parameters('armTemplateSpecSubscriptionId'),parameters('armTemplatesRgName'),'Microsoft.Resources/templateSpecs/versions','KeyVault',parameters('KeyVaultTemplateVersion'))]",
+    "FunctionAppWithPrivateEndpointId": "[resourceId(parameters('armTemplateSpecSubscriptionId'),parameters('armTemplatesRgName'),'Microsoft.Resources/templateSpecs/versions','FunctionApp',parameters('FunctionAppTemplateVersion'))]",
+    "StorageWithPrivateEndpointId": "[resourceId(parameters('armTemplateSpecSubscriptionId'),parameters('armTemplatesRgName'),'Microsoft.Resources/templateSpecs/versions','StorageAccount',parameters('storageAccountTemplateVersion'))]",
+    "currentSubscriptionId": "[subscription().subscriptionId]",
+    "currentResourceGroupName": "[resourceGroup().name]",
+    "junoCommonRGName": "[concat('JunoCommon',parameters('environment'))]",
+    "junoPrereqRGName": "[concat('Junoprereq',parameters('environment'))]",
+    "regionCount": "[if(parameters('bcdrEnabled'),2,1)]",
+    "regionStates": [
+      "[parameters('region1State')]",
+      "[parameters('region2State')]"
+    ],
+    "location": [
+      "[parameters('location-region1')]",
+      "[parameters('location-region2')]"
+    ],
+    "common-KeyVault": [
+      "[parameters('common-KeyVault-Region1')]",
+      "[parameters('common-KeyVault-Region2')]"
+    ],
+    "common-AppPlanId": [
+      "[parameters('common-AppPlanId-Region1')]",
+      "[parameters('common-AppPlanId-Region2')]"
+    ],
+    "prereq-KeyVault": [
+      "[parameters('prereq-KeyVault-Region1')]",
+      "[parameters('prereq-KeyVault-Region2')]"
+    ],
+    "regionSuffix":[
+      "[parameters('regionSuffixRegion1')]",
+      "[parameters('regionSuffixRegion2')]"
+    ],
+    "appName": "[concat(parameters('appName'),'-',parameters('uniqueSuffix'),'-')]",
+    "copy": [
+      {
+        "name": "commonVNetName",
+        "count": "[variables('regionCount')]",
+        "input": "[tolower(concat('juno-c-vnet-', variables('regionSuffix')[copyIndex('commonVNetName')],'-',parameters('environment')))]"
+      },
+      {
+        "name": "appStorageName",
+        "count": "[variables('regionCount')]",
+        "input": "[concat(parameters('appName'),parameters('uniqueSuffix'),'appst',variables('regionSuffix')[copyIndex('appStorageName')],parameters('environment'))]"
+      },
+      {
+        "name": "fnStorageName",
+        "count": "[variables('regionCount')]",
+        "input": "[concat(parameters('appName'),parameters('uniqueSuffix'),'fnst',variables('regionSuffix')[copyIndex('fnStorageName')],parameters('environment'))]"
+      },
+      {
+        "name": "fnAppName",
+        "count": "[variables('regionCount')]",
+        "input": "[concat(variables('appName'),'fn-',variables('regionSuffix')[copyIndex('fnAppName')],'-',parameters('environment'))]"
+      },
+      {
+        "name": "fnAppCertName",
+        "count": "[variables('regionCount')]",
+        "input": "[concat(variables('appName'),'web-cert-',variables('regionSuffix')[copyIndex('fnAppCertName')],'-',parameters('environment'))]"
+      },
+      {
+        "name": "appInsightsName",
+        "count": "[variables('regionCount')]",
+        "input": "[concat(variables('appName'),'ai-',variables('regionSuffix')[copyIndex('appInsightsName')],'-',parameters('environment'))]"
+      },
+      {
+        "name": "appInsightsId",
+        "count": "[variables('regionCount')]",
+        "input": "[resourceId('microsoft.insights/components', variables('appInsightsName')[copyIndex('appInsightsId')])]"
+      },
+      {
+        "name": "userAssignedManagedIdentityName",
+        "count": "[variables('regionCount')]",
+        "input": "[tolower(concat(variables('appName'),'umi-',variables('regionSuffix')[copyIndex('userAssignedManagedIdentityName')],'-',parameters('environment')))]"
+      }
+    ],
+    "cosmosDBName": "[concat(variables('appName'),'cosmossql-',parameters('environment'))]",
+    "trafficManagerName": "[tolower(concat(variables('appName'),'tm-',parameters('environment')))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "name": "[variables('userAssignedManagedIdentityName')[copyIndex()]]",
+      "copy": {
+        "name": "resourceLoop",
+        "count": "[variables('regionCount')]"
+      },
+      "apiVersion": "[variables('userAssignedIdentityApiVersion')]",
+      "location": "[variables('location')[copyIndex()]]"
+    },
+    {
+      "apiVersion": "[variables('templateSpecDeploymentApiVersion')]",
+      "copy": {
+        "name": "storageAccountResourceLoop",
+        "count": "[variables('regionCount')]"
+      },
+      "dependsOn": [],
+      "name": "[concat('deploy-',variables('appStorageName')[copyIndex()])]",
+      "properties": {
+        "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[variables('location')[copyIndex()]]"
+          },
+          "storageAccountName": {
+            "value": "[variables('appStorageName')[copyIndex()]]"
+          },
+          "accessTier": {
+            "value": "[parameters('accessTier')]"
+          },
+          "largeFileSharesState": {
+            "value": "[parameters('largeFileSharesState')]"
+          },
+          "storageAccountType": {
+            "value": "[parameters('storageAccountType')]"
+          },
+          "kind": {
+            "value": "[parameters('kind')]"
+          },
+          "ipRules": {
+            "value": "[parameters('allowIpRules')]"
+          },
+          "armTemplateSpecSubscriptionId": {
+            "value": "[parameters('armTemplateSpecSubscriptionId')]"
+          },
+          "privateDnsZoneSubscriptionId": {
+            "value": "[parameters('privateDnsZoneSubscriptionId')]"
+          },
+          "privateDnsZoneResourceGroupName": {
+            "value": "[parameters('privateDnsZoneResourceGroupName')]"
+          },
+          "virtualNetworkResourceGroupName": {
+            "value": "[variables('junoCommonRGName')]"
+          },
+          "virtualNetworkName": {
+            "value": "[variables('commonVNetName')[copyIndex()]]"
+          },
+          "virtualNetworkSubNetName": {
+            "value": "[parameters('pvtEndpointConnSubnetName')]"
+          }
+        },
+        "templateLink": {
+          "id": "[variables('StorageWithPrivateEndpointId')]"
+        }
+      },
+      "tags": {},
+      "type": "Microsoft.Resources/deployments"
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "[variables('templateSpecDeploymentApiVersion')]",
+      "name": "[concat('deploy-',variables('fnStorageName')[copyIndex()])]",
+      "copy": {
+        "name": "fnStorageName ResourceLoop",
+        "count": "[variables('regionCount')]"
+      },
+      "properties": {
+        "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[variables('location')[copyIndex()]]"
+          },
+          "storageAccountName": {
+            "value": "[variables('fnStorageName')[copyIndex()]]"
+          },
+          "ipRules": {
+            "value": "[parameters('allowIpRules')]"
+          },
+          "armTemplateSpecSubscriptionId": {
+            "value": "[parameters('armTemplateSpecSubscriptionId')]"
+          },
+          "privateDnsZoneSubscriptionId": {
+            "value": "[parameters('privateDnsZoneSubscriptionId')]"
+          },
+          "privateDnsZoneResourceGroupName": {
+            "value": "[parameters('privateDnsZoneResourceGroupName')]"
+          },
+          "virtualNetworkResourceGroupName": {
+            "value": "[variables('junoCommonRGName')]"
+          },
+          "virtualNetworkName": {
+            "value": "[variables('commonVNetName')[copyIndex()]]"
+          },
+          "virtualNetworkSubNetName": {
+            "value": "[parameters('pvtEndpointConnSubnetName')]"
+          }
+        },
+        "templateLink": {
+          "id": "[variables('StorageWithPrivateEndpointId')]"
+        }
+      }
+    },
+    {
+      "apiVersion": "[variables('appInsightsApiVersion')]",
+      "copy": {
+        "name": "resourceLoop",
+        "count": "[variables('regionCount')]"
+      },
+      "location": "[variables('location')[copyIndex()]]",
+      "name": "[variables('appInsightsName')[copyIndex()]]",
+      "properties": {
+        "ApplicationId": "[variables('appInsightsName')[copyIndex()]]",
+        "IngestionMode": "LogAnalytics",
+        "Request_Source": "IbizaWebAppExtensionCreate",
+        "WorkspaceResourceId": "[concat('/subscriptions/',subscription().subscriptionId,'/resourcegroups/',parameters('appInsightsTargetWorkspaceResourceGroup'),'/providers/microsoft.operationalinsights/workspaces/',parameters('appName'),'-dw-la-',variables('regionSuffix')[copyIndex()],'-',parameters('environment'))]"
+      },
+      "tags": {},
+      "type": "microsoft.insights/components"
+    },
+    {
+      "apiVersion": "[variables('templateSpecDeploymentApiVersion')]",
+      "copy": {
+        "name": "fnAppNameResourceLoop",
+        "count": "[variables('regionCount')]"
+      },
+      "dependsOn": [
+        "[variables('appInsightsName')[copyIndex()]]",
+        "[concat('deploy-',variables('appStorageName')[copyIndex()])]",
+        "[concat('deploy-',variables('fnStorageName')[copyIndex()])]",
+        "[variables('cosmosDBName')]"
+      ],
+      "name": "[concat('deploy-',variables('fnAppName')[copyIndex()])]",
+      "properties": {
+        "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[variables('location')[copyIndex()]]"
+          },
+          "fnAppName": {
+            "value": "[variables('fnAppName')[copyIndex()]]"
+          },
+          "fnAppCertName": {
+            "value": "[variables('fnAppCertName')[copyIndex()]]"
+          },
+          "fnCertKeyVaultId": {
+            "value": "[parameters('prereq-KV-Id')]"
+          },
+          "fnCertKeyVaultCertName": {
+            "value": "[parameters('appDnsCertSecretName')]"
+          },
+          "netFrameworkVersion": {
+            "value": "[parameters('netFrameworkVersion')]"
+          },
+          "identity": {
+            "value": {
+              "type": "UserAssigned",
+              "userAssignedIdentities": {
+                "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities/',variables('userAssignedManagedIdentityName')[copyIndex()])]": {}
+              }
+            }
+          },
+          "appSettings": {
+            "value": {
+              "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+              "FUNCTIONS_EXTENSION_VERSION": "~4",
+              "APPINSIGHTS_INSTRUMENTATIONKEY": "[reference(variables('appInsightsId')[copyIndex()]).InstrumentationKey]",
+              "AzureWebJobsStorage": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('fnStorageName')[copyIndex()],';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('fnStorageName')[copyIndex()]), variables('storageApiVersion')).keys[0].value,';EndpointSuffix=','core.windows.net')]",
+              "[parameters('payloadDatabaseNameConfigName')]": "[parameters('payloadDatabaseName')]",
+              "[parameters('payloadDatabaseUrlConfigName')]": "[reference(resourceid('Microsoft.DocumentDb/databaseAccounts',variables('cosmosDBName')),variables('cosmosDBApiVersion')).documentEndpoint]",
+              "[parameters('payloadDatabaseKeyConfigName')]": "[listkeys(resourceid('Microsoft.DocumentDb/databaseAccounts',variables('cosmosDBName')),variables('cosmosDBApiVersion')).primaryMasterKey]",
+              "AttachmentBlobStorageConnStr": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('appStorageName')[copyIndex()],';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('appStorageName')[copyIndex()]), variables('storageApiVersion')).keys[0].value,';EndpointSuffix=','core.windows.net')]",
+              "AttachmentBlobStorageContainerName": "[parameters('AttachmentBlobStorageContainerNameConfigValue')]",
+              "WEBSITE_FIRST_PARTY_ID": "AntMDS",
+              "CustomerResourceId": "[parameters('CustomerResourceId')]",
+              "GenevaMonitoringAccountName": "[parameters('GenevaMonitoringAccountName')]",
+              "GenevaMonitoringNamespaceName": "[parameters('GenevaMonitoringNamespaceName')]",
+              "GenevaInitializationType": "[parameters('GenevaInitializationType')]",
+              "GenevaTenantRoleName": "[parameters('GenevaTenantRoleName')]",
+              "GenevaRoleName": "[parameters('GenevaRoleName')]",
+              "Region": "[variables('location')[copyIndex()]]",
+              "AZURE_CLIENT_ID": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities',variables('userAssignedManagedIdentityName')[copyIndex()])).clientId]",
+              "AzureServicesAuthConnectionString": "[concat('RunAs=App;AppId=',reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities',variables('userAssignedManagedIdentityName')[copyIndex()])).clientId) ]",
+              "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET": "[parameters('aadAuthSecret')]",
+              "[parameters('prereqkvUrlConfigName')]": "[concat('https://',variables('prereq-KeyVault')[copyIndex()],'.vault.azure.net/')]",
+              "WEBSITE_LOAD_CERTIFICATES": "37A663B2301A559AE904D6DA16873D19F689E0EF",
+              "WEBSITE_LOAD_USER_PROFILE": 1,
+              "WEBSITE_AUTH_CUSTOM_AUTHORIZATION": "true"
+            }
+          },
+          "serverFarmId": {
+            "value": "[variables('common-AppPlanId')[copyIndex()]]"
+          },
+          "armTemplateSpecSubscriptionId": {
+            "value": "[parameters('armTemplateSpecSubscriptionId')]"
+          },
+          "privateDnsZoneSubscriptionId": {
+            "value": "[parameters('privateDnsZoneSubscriptionId')]"
+          },
+          "privateDnsZoneResourceGroupName": {
+            "value": "[parameters('privateDnsZoneResourceGroupName')]"
+          },
+          "virtualNetworkResourceGroupName": {
+            "value": "[variables('junoCommonRGName')]"
+          },
+          "virtualNetworkName": {
+            "value": "[variables('commonVNetName')[copyIndex()]]"
+          },
+          "virtualNetworkSubNetName": {
+            "value": "[parameters('websitesSubnetName')]"
+          },
+          "privateEndpointSubNetName": {
+            "value": "[parameters('pvtEndpointConnSubnetName')]"
+          },
+          "enableAAD": {
+            "value": true
+          },
+          "tenant": {
+            "value": "[parameters('aadTenant')]"
+          },
+          "clientId": {
+            "value": "[parameters('aadClientId')]"
+          },
+          "allowedAudiences": {
+            "value": "[parameters('aadAuthAllowedAudiences')]"
+          }
+        },
+        "templateLink": {
+          "id": "[variables('FunctionAppWithPrivateEndpointId')]"
+        }
+      },
+      "type": "Microsoft.Resources/deployments"
+    },
+
+    {
+      "type": "Microsoft.Web/sites/extensions",
+      "condition": "[parameters('deployFnApp')]",
+      "apiVersion": "2022-03-01",
+      "dependsOn": [
+        "[concat('deploy-',variables('fnAppName')[if(equals(parameters('region1State'),'Enabled'),0,1)])]"
+      ],
+      "name": "[format('{0}/{1}',variables('fnAppName')[if(equals(parameters('region1State'),'Enabled'),0,1)],'MSDeploy')]",
+      "properties": {
+        "packageUri": "[parameters('servicePackageLink')]"
+      }
+    },
+
+    {
+      "apiVersion": "[variables('cosmosDBApiVersion')]",
+      "kind": "GlobalDocumentDB",
+      "type": "Microsoft.DocumentDb/databaseAccounts",
+      "name": "[variables('cosmosDBName')]",
+      // TODO: https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-move-regions
+      // Can use above to migrate the region to "westus2" for poc/int 
+      "location": "[if(parameters('isProd'), 'westus2', 'eastus')]",
+      "properties": {
+        "databaseAccountOfferType": "Standard",
+        "copy": [
+          {
+            "name": "locations",
+            "count": "[variables('regionCount')]",
+            "input": {
+              "id": "[concat(variables('cosmosDBName'), '-', variables('regionSuffix')[copyIndex('locations')])]",
+              "failoverPriority": "[copyIndex('locations')]",
+              "locationName": "[variables('location')[copyIndex('locations')]]"
+            }
+          }
+        ],
+        "enableMultipleWriteLocations": false,
+        "isVirtualNetworkFilterEnabled": false,
+        "virtualNetworkRules": [],
+        "ipRangeFilter": "",
+        "dependsOn": [],
+        "capabilities": []
+      },
+      "tags": {
+        "defaultExperience": "Core (SQL)"
+      },
+      "resources": [
+        {
+          "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
+          "name": "[concat(variables('cosmosDBName'), '/', parameters('payloadDatabaseName'))]",
+          "apiVersion": "2019-08-01",
+          "dependsOn": [ "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosDBName'))]" ],
+          "properties": {
+            "resource": {
+              "id": "[parameters('payloadDatabaseName')]"
+            },
+            "options": {
+              "autoscaleSettings": {
+                "maxThroughput": "[parameters('sharedThroughput')]"
+              }
+            }
+          },
+          "resources": [
+            {
+              "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+              "name": "[concat(variables('cosmosDBName'), '/', parameters('payloadDatabaseName'), '/', parameters('datarefContainer'))]",
+              "apiVersion": "2019-08-01",
+              "dependsOn": [ "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), parameters('payloadDatabaseName'))]" ],
+              "properties": {
+                "resource": {
+                  "id": "[parameters('datarefContainer')]",
+                  "partitionKey": {
+                    "paths": [
+                      "/payloadId"
+                    ],
+                    "kind": "Hash"
+                  },
+                  "indexingPolicy": {
+                    "indexingMode": "consistent",
+                    "includedPaths": [],
+                    "excludedPaths": []
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+              "name": "[concat(variables('cosmosDBName'), '/', parameters('payloadDatabaseName'), '/', parameters('metadataContainer'))]",
+              "apiVersion": "2019-08-01",
+              "dependsOn": [ "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), parameters('payloadDatabaseName'))]" ],
+              "properties": {
+                "resource": {
+                  "id": "[parameters('metadataContainer')]",
+                  "partitionKey": {
+                    "paths": [
+                      "/payloadId"
+                    ],
+                    "kind": "Hash"
+                  },
+                  "indexingPolicy": {
+                    "indexingMode": "consistent",
+                    "includedPaths": [],
+                    "excludedPaths": []
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+              "name": "[concat(variables('cosmosDBName'), '/', parameters('payloadDatabaseName'), '/', parameters('payloadsContainer'))]",
+              "apiVersion": "2019-08-01",
+              "dependsOn": [ "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosDBName'), parameters('payloadDatabaseName'))]" ],
+              "properties": {
+                "resource": {
+                  "id": "[parameters('payloadsContainer')]",
+                  "partitionKey": {
+                    "paths": [
+                      "/partitionKey"
+                    ],
+                    "kind": "Hash"
+                  },
+                  "indexingPolicy": {
+                    "indexingMode": "consistent",
+                    "includedPaths": [],
+                    "excludedPaths": []
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },    
+    {
+      "apiVersion": "[variables('templateSpecDeploymentApiVersion')]",
+      "copy": {
+        "name": "resourceLoop",
+        "count": "[variables('regionCount')]"
+      },
+      "dependsOn": [
+        "[concat('deploy-',variables('fnAppName')[copyIndex()])]"
+      ],
+      "name": "[concat('addSecretsToCommonKV',copyIndex())]",
+      "resourceGroup": "[variables('junoCommonRGName')]",
+      "properties": {
+        "mode": "Incremental",
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "resources": [
+            {
+              "type": "Microsoft.KeyVault/vaults/secrets",
+              "name": "[concat(variables('common-KeyVault')[copyIndex()], '/',parameters('payloadApiUrlSecretName')) ]",
+              "apiVersion": "[variables('keyVaultApiVersion')]",
+              "properties": {
+                "value": "[concat('https://',parameters('appDns'))]"
+              }
+            },
+            {
+              "type": "Microsoft.KeyVault/vaults/secrets",
+              "name": "[concat(variables('common-KeyVault')[copyIndex()], '/',parameters('payloadApiKeyUrlSecretName')) ]",
+              "apiVersion": "[variables('keyVaultApiVersion')]",
+              "properties": {
+                "value": "[listkeys(concat(resourceId(subscription().subscriptionId, resourceGroup().name, 'Microsoft.Web/sites', variables('fnAppName')[copyIndex()]),'/host/default'),variables('webAppApiVersion')).functionKeys.default]"
+              }
+            }
+          ]
+        }
+      },
+      "type": "Microsoft.Resources/deployments"
+    },
+
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "[variables('templateSpecDeploymentApiVersion')]",
+      "name": "[concat('addAccessPolicyToPrereqKV',copyIndex())]",
+      "resourceGroup": "[variables('junoPrereqRGName')]",
+      "copy": {
+        "name": "resourceLoop",
+        "count": "[variables('regionCount')]"
+      },
+      "dependsOn": [
+        "[concat('deploy-',variables('fnAppName')[copyIndex()])]"
+      ],
+      "properties": {
+        "mode": "Incremental",
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "resources": [
+            {
+              "type": "Microsoft.KeyVault/vaults/accessPolicies",
+              "name": "[concat(variables('prereq-KeyVault')[copyIndex()], '/add')]",
+              "apiVersion": "[variables('keyVaultApiVersion')]",
+              "properties": {
+                "accessPolicies": [
+                  {
+                    "objectId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities',variables('userAssignedManagedIdentityName')[copyIndex()])).PrincipalId]",
+                    "tenantId": "[parameters('aadTenant')]",
+                    "permissions": {
+                      "keys": [
+                        "Get",
+                        "List"
+                      ],
+                      "secrets": [
+                        "Get",
+                        "List"
+                      ],
+                      "certificates": [
+                        "Get",
+                        "List"
+                      ]
+                    },
+                    "applicationId": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "apiVersion": "[variables('trafficManagerApiVersion')]",
+      "type": "Microsoft.Network/trafficmanagerprofiles",
+      "name": "[variables('trafficManagerName')]",
+      "location": "global",
+      "dependsOn": [
+        "FnAppNameResourceLoop"
+      ],
+      "properties": {
+        "trafficRoutingMethod": "Priority",
+        "maxReturn": 0,
+        "dnsConfig": {
+          "relativeName": "[variables('trafficManagerName')]",
+          "ttl": "60"
+        },
+        "monitorConfig": {
+          "protocol": "https",
+          "port": "443",
+          "path": "/",
+          "intervalInSeconds": 30,
+          "toleratedNumberOfFailures": 3,
+          "timeoutInSeconds": 10
+        },
+        "copy": [
+          {
+            "name": "endpoints",
+            "count": "[variables('regionCount')]",
+            "input": {
+              "name": "[variables('fnAppName')[copyIndex('endpoints')]]",
+              "type": "Microsoft.Network/trafficManagerProfiles/azureEndpoints",
+              "properties": {
+                "endpointStatus": "[variables('regionStates')[copyIndex('endpoints')]]",
+                "targetResourceId": "[resourceId(subscription().subscriptionId, resourceGroup().name, 'Microsoft.Web/sites', variables('fnAppName')[copyIndex('endpoints')])]",
+                "weight": 1,
+                "priority": "[copyIndex('endpoints',1)]",
+                "endpointLocation": "[variables('location')[copyIndex('endpoints')]]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "[variables('webAppApiVersion')]",
+      "copy": {
+        "name": "resourceLoop",
+        "count": "[variables('regionCount')]",
+        "mode": "serial",
+        "batchSize": 1
+      },
+      "dependsOn": [
+        "[concat('deploy-',variables('fnAppName')[copyIndex()])]",
+        "[variables('trafficManagerName')]"
+      ],
+      "location": "[variables('location')[copyIndex()]]",
+      "name": "[concat(variables('fnAppName')[copyIndex()], '/', parameters('appDns'))]",
+      "properties": {
+        "sslState": "SniEnabled",
+        "thumbprint": "[reference(resourceId('Microsoft.Web/certificates',variables('fnAppCertName')[copyIndex()]) ,variables('webAppApiVersion') ).Thumbprint]"
+      },
+      "type": "Microsoft.Web/sites/hostnameBindings"
+    }
+
+  ],
+  "outputs": {}
+}

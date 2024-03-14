@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Juno.Payload.Client</AssemblyName>
+    <RootNamespace>Juno.Payload.Client</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Sung Gon Maeng, Petr Abraham</Authors>
+    <Company>Microsoft</Company>
+    <Version>4.1.1</Version>
+    <Description>Juno payload service v2 client to create a payload or consume the payload, payload data, payload metadata collection and payload data references.</Description>
+    <PackageReleaseNotes>Bug fix on ReadPayloadMetadataCollectionForAsync</PackageReleaseNotes>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.10.4" />
+    <PackageReference Include="Juno.Common" Version="1.7.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Localization.DelegatingHandlers" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Localization.RestApiAccess" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Localization.SignProviders" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Validation" Version="17.0.65" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Juno.Payload.Contracts\Juno.Payload.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

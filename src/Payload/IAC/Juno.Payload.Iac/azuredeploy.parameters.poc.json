@@ -1,0 +1,128 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "paths": [
+    {
+      "parameterReference": "servicePackageLink"
+    }
+  ],
+  "parameters": {
+    "region1State": {
+      "value": "Enabled"
+    },
+    "region2State": {
+      "value": "Disabled"
+    },
+    "aadClientId": {
+      "value": "b8305996-b748-4bc5-9636-976805304dfd"
+    },
+    "aadTenant": {
+      "value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+    },
+    "bcdrEnabled": {
+      "value": false
+    },
+    "isProd": {
+      "value": false
+    },
+    "location-region1": {
+      "value": "westus2"
+    },
+    "location-region2": {
+      "value": "eastus"
+    },
+    "regionSuffixRegion1": {
+      "value": "r2"
+    },
+    "regionSuffixRegion2": {
+      "value": "r1"
+    },
+    "GenevaMonitoringAccountName": {
+      "value": "JunoTestEUS"
+    },
+    "GenevaMonitoringNamespaceName": {
+      "value": "JunoFNEUS"
+    },
+    "GenevaInitializationType": {
+      "value": "TenantIdentity"
+    },
+    "GenevaTenantRoleName": {
+      "value": "JunoPoc"
+    },
+    "GenevaRoleName": {
+      "value": "AppService"
+    },
+    "appName": {
+      "value": "juno"
+    },
+    "environment": {
+      "value": "poc"
+    },
+    "prereq-KV-Id": {
+      "value": "/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/Junoprereqpoc/providers/Microsoft.KeyVault/vaults/junoprereqkvpoc"
+    },
+    "appDns": {
+      "value": "payloadpoc.juno.microsoft.com"
+    },
+    "aadAuthSecret": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/Junoprereqpoc/providers/Microsoft.KeyVault/vaults/junoprereqkvpoc"
+        },
+        "secretName": "pl-api-aad-secret"
+      }
+    },
+    "aadAuthAllowedAudiences": {
+      "value": [
+        "https://payloadpoc.juno.microsoft.com"
+      ]
+    },
+    "common-KeyVault-Region2": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/JunoCommonPoc/providers/Microsoft.KeyVault/vaults/juno-c-kv-r1-poc"
+        },
+        "secretName": "c-KeyVaultName"
+      }
+    },
+    "common-KeyVault-Region1": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/JunoCommonPoc/providers/Microsoft.KeyVault/vaults/juno-c-kv-r2-poc"
+        },
+        "secretName": "c-KeyVaultName"
+      }
+    },
+    "common-AppPlanId-Region2": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/JunoCommonPoc/providers/Microsoft.KeyVault/vaults/juno-c-kv-r1-poc"
+        },
+        "secretName": "c-CommonAppPlanId"
+      }
+    },
+    "common-AppPlanId-Region1": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/58db12b6-6fe2-41da-b9e6-a92159a6f11b/resourceGroups/JunoCommonPoc/providers/Microsoft.KeyVault/vaults/juno-c-kv-r2-poc"
+        },
+        "secretName": "c-CommonAppPlanId"
+      }
+    },
+    "prereq-KeyVault-Region2": {
+      "value": "junoprereqkvpoc"
+    },
+    "prereq-KeyVault-Region1": {
+      "value": "junoprereqkvr2poc"
+    },
+    "armTemplateSpecSubscriptionId": {
+      "value": "7403edb1-d28b-4a9c-8170-53cd07bff061"
+    },
+    "privateDnsZoneSubscriptionId": {
+      "value": "7403edb1-d28b-4a9c-8170-53cd07bff061"
+    },
+    "servicePackageLink": {
+      "value": "bin\\Juno.Payload.Service.zip"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Juno.Payload.Service": {
+      "commandName": "Project",
+      "commandLineArgs": "--verbose"
+    }
+  }
+}
