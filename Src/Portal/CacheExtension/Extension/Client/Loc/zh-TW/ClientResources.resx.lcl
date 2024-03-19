@@ -16,7 +16,7 @@
         </Str>
         <Disp Icon="Str" />
         <Cmts>
-          <Cmt Name="Dev"><![CDATA[Message shown when regenerating key is in progress]]></Cmt>
+          <Cmt Name="Dev"><![CDATA[zh-TW ... Message shown when regenerating key is in progress]]></Cmt>
         </Cmts>
       </Item>
       <Item ItemId=";RegenerationKeySuccess" ItemType="0;.resx" PsrId="211" Leaf="true">
