@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LCX SchemaVersion="6.0" Name="D:\a\1\s\AndroidDeviceManager.Resources\Translations\PropertyTranslations.resx" PsrId="211" FileType="1" SrcCul="en-US" TgtCul="zh-CN" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
+  <OwnedComments>
+    <Cmt Name="Dev" />
+    <Cmt Name="LcxAdmin" />
+    <Cmt Name="Rccx" />
+  </OwnedComments>
+  <Settings Name="@vsLocTools@\default.lss" Type="Lss" />
+  <Item ItemId=";PropertyTranslations.resx" ItemType="0" PsrId="211" Leaf="false">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+    <Item ItemId=";Strings" ItemType="0" PsrId="211" Leaf="false">
+      <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";ABI_TYPE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Abi type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Abi 类型]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ABI_TYPE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the ABI (application binary interface) type of the emulated device. The "x86" option is for the instruction set commonly referred to as "x86" or "IA-32". The "x86_64" option is for the 64-bit x86 instruction set. The "armeabi-v7a" option is for the ARM instruction set with v7-a ARM extensions. The 'arm64-v8a' option is for the ARM instruction set that supports AArch64.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定模拟设备的 ABI (应用程序二进制接口)类型。"X86" 选项适用于通常称为 "x86" 或 "IA-32" 的指令集。"X86_64" 选项适用于 64 位 x86 指令集。"Armeabi-v7a" 选项适用于具有 v7-a ARM 扩展的 ARM 指令集。"Arm64-v8a" 选项适用于支持 AArch64 的 ARM 指令集。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_DYNAMIC_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Whether or not the skin is dynamic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[外观是否为动态]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_DYNAMIC_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The emulator skin is a dynamic skin if the emulator is to construct a skin of a given size based on a specified width and height.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[如果仿真程序要基于指定的宽度和高度来构造给定大小的外观，则仿真程序外观是动态外观。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_NAME_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Skin name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[外观名称]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_NAME_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The name for an Android emulator skin. A skin is a collection of files that defines the visual and control elements of an emulator display.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Android 仿真程序外观的名称。外观是一个文件集合，用于定义仿真程序显示的视觉和控件元素。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Skin path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[外观路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the directory that contains the emulator skin files specified in 'skin.name'. This directory contains 'hardware.ini', layout files, and image files for the display elements of the skin.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[包含 "skin.name" 中指定的仿真程序外观文件的目录路径。此目录包含外观显示元素的 "hardware.ini"、布局文件和图像文件。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_VM_HEAP_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maximum VM heap size]A;Higher values are required for high-dpi devices]A;Default will depend on RAM size.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最大 VM 堆大小]A;高 dpi 设备需要较高的值]A;默认值取决于 RAM 大小。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_VM_HEAP_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the maximum virtual machine heap size (in megabytes) that a Dalvik application can allocate before it is killed by the system. Higher values are required for high-dpi devices. The default value depends upon RAM size.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定系统在终止 Dalvik 应用程序之前该程序可以分配的最大虚拟机堆大小(以 MB 为单位)。高 dpi 设备需要较高的值。默认值取决于 RAM 大小。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_NAME_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Name of the AVD being run]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[正在运行的 AVD 的名称]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache partition]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[缓存分区]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device will use a '/cache' partition on the device. The '/cache' partition (which is initially empty) is the location where Android stores frequently accessed data and app components. If set to 'no', the emulator will not use a '/cache' partition and the other 'disk.cache' settings will be ignored.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否在设备上使用 "/cache" 分区。"/Cache" 分区(初始为空)是 Android 用于存储被频繁访问的数据和应用组件的位置。如果设置为“否”，仿真程序不会使用 "/cache" 分区，而另一个 "disk.cache" 设置将被忽略。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache partition path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[缓存分区路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies a cache partition image file on your development computer. The emulator will use this file for the '/cache' partition. Enter an absolute path or a path relative to the emulator's 'data' directory. If not set, the emulator creates an empty temporary file called 'cache.img' on your development computer. If the file does not exist, it is created as an empty file. This option is ignored if 'disk.cachePartition' is set to 'no'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[在开发计算机上指定缓存分区图像文件。仿真程序将为 "/cache" 分区使用此文件。输入仿真程序 "data" 目录的绝对路径或相对路径。如果不设置，仿真程序将在开发计算机上创建名为 "cache. img" 的空临时文件。如果该文件不存在，则会将其创建为空文件。如果 "disk.cachePartition" 设置为“否”，则会忽略此选项。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache partition size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[缓存分区大小]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The size of the cache partition file (in bytes). Normally you do not need to set this option unless the app will be downloading very large files that are larger than the default cache size of 66 megabytes. This option is ignored if 'disk.cachePartition' is set to 'no'. If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[缓存分区文件的大小(以字节为单位)。通常无需设置此选项，除非应用将下载非常大的文件，其大小大于默认缓存大小 66 mb。如果 "disk. cachePartition" 设置为 "否"，则忽略此选项。如果 size 是一个简单的整数，则指定大小(以字节为单位)。还可以通过向大小追加 K、M 或 G 来指定大小(kb)、兆字节和 gb。最小大小为9M，最大大小为1023G。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_INIT_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Initial path to the data partition]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[数据分区的初始路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_INIT_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the initial contents of the data partition. After wiping user data, the emulator copies the contents of the specified file to user data (bydefault, 'userdata-qemu.img') instead of using 'userdata.img' as the initial version.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定数据分区的初始内容。擦除用户数据后，仿真程序将指定文件的内容复制到用户数据(默认为 "userdata-qemu.img")，而不是使用 "userdata.img" 作为初始版本。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the data partition.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[数据分区的路径。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the user data partition file. To configurea persistent user data file, enter a filename and a path on your development computer. If the file doesn't exist, the emulator creates an image from the default file 'userdata.img', stores it in the filename specified by 'disk.dataPartition.path', and persists user data to it when the emulator shuts down. If you don't specify a path, the default file is named 'userdata-qemu.img'. The special value '<temp>' causes the emulator to create and use a temporary file. If 'disk.dataPartition.initPath' is set, its content will be copied to the 'disk.dataPartition.path' file at boot-time. Note that this option cannot be left blank.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定用户数据分区文件。若要配置永久性用户数据文件，请在开发计算机上输入文件名和路径。如果文件不存在，则仿真程序将从默认文件 "userdata.img" 创建一个映像，将其存储在 "disk.dataPartition.path" 所指定的文件名中，并在仿真器关闭时将用户数据保留到其中。如果未指定路径，则默认文件的名称为 "userdata-qemu.img"。特殊值 "<temp>" 会导致仿真程序创建和使用临时文件。如果设置了 "disk.dataPartition.initPath"，则在启动时会将其内容复制到 "disk.dataPartition.path" 文件中。请注意，此选项不能留空。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Data partition size.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[数据分区大小。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the size of the user data partition in bytes. If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定用户数据分区的大小(以字节为单位)。如果大小是一个简单的整数，则指定大小时以字节为单位。还可以通过向大小追加 K、M 或 G，以 kb、mb、和 gb 为单位来指定大小。最小为 9M，最大为 1023G。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_RAMDISK_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Ramdisk path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ramdisk 路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_RAMDISK_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the boot partition (ramdisk) image. The ramdisk image is a subset of the system image that is loaded by the kernel before the system image is mounted. The ramdisk image typically contains boot-time binaries and initialization scripts. If this option is not specified, the default is 'ramdisk.img' in the emulator system directory.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[启动分区(ramdisk)映像的路径。Ramdisk 映像是系统映像装载之前内核加载的系统映像的子集。Ramdisk 映像通常包含启动时二进制文件和初始化脚本。如果未指定此选项，则默认为仿真程序系统目录中的 "ramdisk. img"。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SNAP_STORAGE_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Snapshot storage path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[快照存储路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SNAP_STORAGE_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the 'snapshot storage' file where all snapshots are stored. All snapshots made during execution will be saved to this file. Only snapshots that are saved to this file can berestored during the emulator run. If this optionis not specified, the default is 'snapshots.img' in the emulator data directory.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[存储所有快照的“快照存储”文件的路径。在执行过程中所拍摄的所有快照都将保存到此文件中。在仿真器运行期间，只有保存到此文件的快照才能被恢复。如果未指定此选项，则默认为仿真程序数据目录中的 "snapshots.img"。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_INIT_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System partition init path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系统分区初始化路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_INIT_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the read-only copy of the system image file; specifically, the partition containing the system libraries and data corresponding to the API level and any variant. If this path is not specified, the default is 'system.img' in the emulator system directory.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系统映像文件的只读副本的路径; 具体而言，是包含与 API 级别和任何变体对应的系统库和数据的分区。如果未指定此路径，则默认为仿真器系统目录中的 "system.img"。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System partition path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系统分区路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the read/write system partition image. If this path is not set, a temporary file will be created and initialized from the contents of the file specified by 'disk.systemPartition.initPath']]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[读/写系统分区映像的路径。如果未设置此路径，将通过 "disk.systemPartition.initPath" 指定的文件的内容来创建和初始化一个临时文件]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System partition size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系统分区大小]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The ideal size of the system partition (in bytes). The size is ignored if the actual system partition image is larger than this setting; otherwise, it specifies the maximum size that the system partition file can grow to. If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系统分区的理想大小(以字节为单位)。如果实际系统分区映像大于此设置，则忽略该大小;否则，它指定系统分区文件可以增长到的最大大小。如果 size 是一个简单的整数，则指定大小(以字节为单位)。还可以通过向大小追加 K、M 或 G 来指定大小(kb)、兆字节和 gb。最小大小为9M，最大大小为1023G。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_COLD_BOOT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Use cold boot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用冷启动]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_COLD_BOOT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start as from a power-up]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[从启动时开始]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_FAST_BOOT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Use fast boot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[使用快速启动]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_FAST_BOOT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start from the state that was saved when the device last exited]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[从上次退出设备时保存的状态开始]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_SNAPSHOT_BOOT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start from snapshot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[从快照开始]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_SNAPSHOT_BOOT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start from the chosen snapshot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[从所选快照开始]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_SNAPSHOT_FILE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Snapshot file]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[快照文件]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_SNAPSHOT_FILE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the snapshot file]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[快照文件的路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ACCELEROMETER_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Accelerometer]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[加速计]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ACCELEROMETER_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device contains an accelerometer sensor. The accelerometer helps the device determine orientation (used for auto-rotation). The accelerometer reports the acceleration of the device along three sensor axes.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否包含加速度传感器。加速器可帮助设备确定方向(用于自动旋转)。加速器报告设备在 3 个传感器轴上的加速度。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ARC_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Chrome OS device (App Runtime for Chrome)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Chrome OS 设备(适用于 Chrome 的应用运行时)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ARC_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device is a Chrome OS machine.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否为 Chrome OS 计算机。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_INPUT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Audio recording support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[音频录制支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_INPUT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device can record audio.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否可以录制音频。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_OUTPUT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Audio playback support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[音频播放支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_OUTPUT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device can play audio.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否可以播放音频。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_BATTERY_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Battery support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[电池支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_BATTERY_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device can run on a battery.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否可以使用电池运行。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Camera support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[相机支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_BACK_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Back-facing camera]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[后置相机]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_BACK_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the back-facing camera (the lens faces away from the user). If you are using a webcam on your development computer to simulate the back-facing camera on the emulated device, this value must be set to 'webcam<N>', where 'N' selects the webcam (if you have only one webcam, choose 'webcam0'). If set to 'emulated', the emulator simulates the camera in software. To disable the back-facing camera, set this value to 'none'. If you enable the back-facing camera, be sure to also enable 'Camera support'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[配置后置相机(镜头不朝向用户)。如果使用开发计算机上的网络摄像头来模拟仿真设备上的后置相机，则此值必须设置为“网络摄像头<N>”，其中 "N" 用于选择网络摄像头(如果只有一个网络摄像头，请选择“网络摄像头0”)。如果设置为“仿真”，则仿真程序会在软件中模拟摄像头。若要禁用后置相机，请将此值设置为“无”。如果启用了后置相机，请确保同时启用“照相机支持”。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device has a camera.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否具有相机。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_FRONT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Front-facing camera]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[前置相机]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_FRONT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the front-facing camera (the lens faces towards the user). If you are using a webcam on your development computer to simulate the front-facing camera on the emulated device, this value must be set to 'webcam<N>', where 'N' selects the webcam (if you have only one webcam, choose 'webcam0'). If set to 'emulated', the emulator simulates a camera in software. To disable the the front-facing camera, set this value to 'none'. If you enable the front-facing camera, be sure to also enable 'Camera support'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[配置前置相机(镜头朝向用户)。如果使用开发计算机上的网络摄像头来模拟仿真设备上的前置相机，则此值必须设置为“网络摄像头<N>”，其中 "N" 用于选择网络摄像头(如果只有一个网络摄像头，请选择“网络摄像头0”)。如果设置为“仿真”，则仿真程序会在软件中模拟摄像头。若要禁用前置相机，请将此值设置为“无”。如果启用了前置相机，请确保同时启用“照相机支持”。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_HORIZONTAL_PIXELS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maximum horizontal camera pixels]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最大水平相机像素]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_HORIZONTAL_PIXELS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the maximum horizontal resolution of the emulated device's camera (in pixels).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[配置仿真设备相机的最大水平分辨率(以像素为单位)。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_VERTICAL_PIXELS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maximum vertical camera pixels]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[最大垂直相机像素]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_VERTICAL_PIXELS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the maximum vertical resolution of the emulated device's camera (in pixels).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[配置仿真设备相机的最大垂直分辨率(以像素为单位)。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_ARCH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU Architecture]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU 体系结构]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_ARCH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The CPU architecture to be emulated by the virtual device. If you are using Intel HAXM for hardware acceleration, select 'x86' for a 32-bitCPU. Select 'x86_64' for a 64-bit HAXM-accelerated device. (Be sure to install the corresponding Intel x86 system image in the SDK Manager: for example, 'Intel x86 Atom' or 'Intel x86 Atom_64') To simulate an ARM CPU, select 'arm' for 32-bit or select 'arm64' for a 64-bit ARM CPU. Keep in mind that ARM-based virtual devices will run much slower than those that are x86-based because hardware acceleration is not available for ARM.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[虚拟设备要模拟的 CPU 体系结构。如果正在使用 Intel HAXM for 实现硬件加速，请为 32 位 CPU 选择 "x86"。为 64 位 HAXM 加速设备选择 "x86_64"。(请确保在 SDK 管理器中安装相应的 Intel x86 系统映像: 例如，"Intel x86 Atom" 或 "Intel x86 Atom_64") 若要模拟 ARM CPU，请为 32 位选择 "arm"，或为 64 位 ARM CPU 选择 "arm64"。请记住，基于 ARM 的虚拟设备比基于 x86 的虚拟设备运行的速度要慢得多，因为硬件加速不适用于 ARM。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_MODEL_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU model]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU 型号]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_MODEL_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[This value is normally left unset (it will be set to a value that is derived from 'hw.cpu.arch' if it is not explicitly set). However, it can be set to an emulator-specific string for experimental use.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[通常不设置此值(如果未显式设置，则将其设置为从 "hw. hw" 派生的值)。但是，可以将其设置为特定于仿真器的字符串以供实验使用。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_NCORE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Number of CPU Cores]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU 核心数]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_NCORE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Select the number of processor cores on your computer that you’d like to use for the emulator. Using more processor cores speeds up the emulator.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[选择要用于仿真程序的计算机上的处理器核心数。使用更多处理器核心可加快仿真器的速度。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_DPAD_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[DPad keys]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[DPad 键]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_DPAD_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports directional pad (DPad) keys. A DPad typically has four keys to indicate directional control.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持定向键(DPad)。DPad 通常有四个用于指示方向性控制的键。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[GPS support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[GPS 支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device has a GPS (Global Positioning System) receiver.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否具有 GPS (全球定位系统)接收器。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_EMULATION_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Hardware OpenGLES emulation support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[硬件 OpenGLES 仿真支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_EMULATION_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports GPU emulation. When enabled, GPU emulation uses Open GL for Embedded Systems (OpenGL ES) for rendering both 2D and 3D graphics on the screen, and the associated GPU Emulation Mode setting determines how the GPU emulation is implemented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持 GPU 仿真。启用 GPU 仿真后，该功能使用嵌入式系统(OpenGL ES)的 Open GL 在屏幕上渲染 2D 和 3D 图形，且关联的 GPU 仿真模式设置确定如何实现 GPU 仿真。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_MODE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[GPU emulation mode]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[GPU 仿真模式]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_MODE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines how GPU emulation is implemented by the emulator. If you select 'auto', the emulator will choose hardware and software acceleration based on your development computer setup. If you select 'host', the emulator will use your development computer's graphics processor to perform GPU emulation for faster rendering. If you select 'mesa', the emulator will use the Mesa 3D software library to render graphics. Select 'mesa' if you have problems rendering via your development computer's graphics processor. The 'swiftshader' mode can be used to render graphics in software (with slightly less performance than using your computer's GPU). The 'off' option (disable graphics hardware emulation) is a deprecated option that can cause improper rendering for some items and is therefore not recommended.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真程序实现 GPU 仿真的方式。如果选择 "auto"，则仿真程序将基于开发计算机的设置来选择硬件和软件加速。如果选择 "host"，则仿真程序将使用开发计算机的图形处理器来执行 GPU 仿真以提高渲染速度。如果选择 "mesa"，则仿真程序将使用 Mesa 3D 软件库来渲染图形。如果通过开发计算机的图形处理器进行渲染时会出现问题，则请选择 "mesa"。"Swiftshader" 模式可用于在软件中渲染图形(性能与使用计算机的 GPU 相比略低)。“关闭”选项(禁用图形硬件仿真)是一个不推荐使用的选项，可能会导致某些项的渲染不正确，因此不建议使用它。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GSM_MODEM_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[GSM modem support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[GSM 调制解调器支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GSM_MODEM_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device includes a modem that supports the GSM (Global System for Mobile Communications) telephony radio system.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否包含支持 GSM (全球移动通信系统)电话服务广播系统的调制解调器。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_INITIAL_ORIENTATION_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Initial screen orientation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[初始屏幕方向]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_INITIAL_ORIENTATION_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the initial orientation of the screen on the emulated device (portrait or landscape mode). In portrait mode, the screen is taller than it is wide. In landscape mode, the screen is wider than it is tall. When running the emulated device, you can change the orientation if both portrait and landscape are supported in the device profile.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[配置仿真设备上屏幕的初始方向(纵向或横向模式)。在纵向模式下，屏幕的高度大于其宽度。在横向模式下，屏幕的宽度大于其高度。运行模拟设备时，如果设备配置文件中同时支持纵向和横向，则可以更改方向。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Keyboard support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[键盘支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_CHARMAP_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Keyboard charmap name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[键盘 charmap 名称]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_CHARMAP_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The name of the hardware charmap for this device.]A;]A;NOTE: This should always be the default 'qwerty2' unless you have modified the system image accordingly. This name is sent to the kernel at boot time. Using an incorrect name will result in an unusable machine.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[此设备的硬件 charmap 的名称。]A;]A;注意:除非你已相应修改系统映像，否则此值应始终为默认的 "qwerty2"。此名称将在引导时发送到内核。使用不正确的名称将导致计算机无法使用。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a QWERTY keyboard.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持标准键盘。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_LID_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Keyboard lid support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[键盘 lid 支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_LID_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[If keyboard support is enabled, this setting determines whether the QWERTY keyboard can be closed/hidden or opened/visible. This setting willbe ignored if 'hw.keyboard' is set to 'false'.]A;    ]A;NOTE: the default value is 'false' if the emulated device targets API level 12 or higher.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[如果启用了键盘支持，则此设置将确定标准键盘是否可关闭/隐藏或打开/可见。如果 "hw. keyboard" 设置为 "false"，将忽略此设置。]A;    ]A;注意: 如果仿真设备的目标是 API 级别 12 或更高，则默认值为 "false"。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_BACKLIGHT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD backlight]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD 背光]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_BACKLIGHT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether an LCD backlight is simulated by the emulated device.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否模拟 LCD 背光。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DENSITY_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD density]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD 密度]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DENSITY_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The density of the emulated LCD display, measured in density-independent pixels, or 'dp' (dp is a virtual pixel unit). When the setting is 160 dp, each dp corresponds to one physical pixel. At runtime, Android uses this value to select and scale the appropriate resources/assets for correct display rendering.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[仿真 LCD 显示器的密度，以密度无关的像素为单位，或 "dp" (dp 是一个虚拟像素单位)。当设置为 160 dp 时，每个 dp 对应于一个物理像素。在运行时，Android 使用此值选择和缩放适当的资源/资产以正确显示呈现。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DEPTH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD color depth]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD 颜色深度]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DEPTH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The color bit-depth of the emulated framebuffer that holds the bitmap for driving the LCD display. This value can be 16 bits (65,536 possible colors) or 32 bits (16,777,216 colors plus transparency). The 32-bit setting can make the emulator run slightly slower but with better color accuracy.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[包含用于驱动 LCD 显示的位图的仿真帧缓冲区的颜色位深度。此值可为 16 位(65,536 种可能的颜色)或 32 位(16,777,216 种颜色 + 透明度)。32 位设置可能会使仿真器运行稍慢，但颜色精度更高。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_HEIGHT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD pixel height]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD 像素高度]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_HEIGHT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The number of pixels that make up the vertical dimension of the emulated LCD display.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[构成仿真 LCD 显示的垂直维度的像素数。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_WIDTH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD pixel width]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD 像素宽度]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_WIDTH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The number of pixels that make up the horizontal dimension of the emulated LCD display.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[构成仿真 LCD 显示的水平维度的像素数。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAGNETIC_FIELD_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Magnetic Field Sensor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[磁场传感器]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAGNETIC_FIELD_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a magnetic field sensor. The magnetic field sensor (also known as magnetometer) reports the ambient geomagnetic field as measured along three sensor axes. Enable this setting for apps that need access to a compass reading. For example, a navigation app might use this sensor to detect which direction the user faces.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持磁场传感器。磁场传感器(也称为磁力仪)报告沿三个传感器轴测量到的环境地磁场。为需要访问指南针读数的应用启用此设置。例如，导航应用可能会使用此传感器检测用户面朝的方向。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAINKEYS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[THardware Back/Home keys]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[THardware Back/Home 键]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAINKEYS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports hardware Back and Home navigation buttons. You can set this value to 'yes' if the buttons are implemented only in software. If 'hw.mainKeys' is set to 'yes', the emulator will not display navigation buttons on the screen, but you can use the emulator side panel to "press" these buttons.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持硬件“回退”和“主页”导航按钮。如果仅在软件中实现这些按钮，可将此值设置为“是”。如果将 "hw.mainKeys" 设置为“是”，则仿真程序不会在屏幕上显示导航按钮，但可以使用仿真器的侧面板“按”这些按钮。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ORIENTATION_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Orientation support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[方向支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ORIENTATION_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device provides orientation sensor values. The orientation sensor measures degrees of rotation that a device makes around all three physical axes (x, y, z). Note that the orientation sensor was deprecated as of Android 2.2 (API level 8).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否提供方向传感器值。方向传感器测量设备围绕所有三个物理轴(x，y，z)的旋转度。请注意，自 Android 2.2 (API 级别 8)开始，方向传感器已弃用。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_PROXIMITY_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Proximity support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[邻近感应支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_PROXIMITY_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a proximity sensor. This sensor measures the proximity of an object relative to the view screen of a device. This sensor is typically used to determine whether a handset is being held up to aperson's ear.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持邻近感应传感器。此传感器测量对象相对于设备视图屏幕的接近程度。此传感器通常用于确定话筒是否正被置于某人的耳部。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_RAM_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device RAM size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[设备 RAM 大小]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_RAM_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The amount of physical RAM on the emulated device, in megabytes. The default value will be computed from the screen size or the skin version. Increasing the size can provide faster emulator operation, but at the expense of demanding more resources from your development computer.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[仿真设备上的物理 RAM 量(mb)。将通过屏幕大小或外观版本来计算默认值。增加大小可提供更快的仿真器操作，但代价是需要从开发计算机请求更多资源。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SCREEN_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Touch screen type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[触摸屏类型]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SCREEN_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defines the type of screen on the emulated device. A 'multi-touch' screen can track two or more fingers on the touch interface. A 'touch' screen can detect only single-finger touch events. A 'no-touch' screen does not detect touch events.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[定义仿真设备上的屏幕类型。“多点触控”屏幕可以跟踪触摸界面上的两个或多个手指。“触摸”屏幕只能检测到单手指触摸事件。“非触摸”屏幕不检测触摸事件。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SDCard support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SDCard 支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports insertion and removal of virtual SD (SecureDigital) cards. The emulator uses mountable disk images stored on your development computer to simulate the partitions of actual SD card devices (see 'hw.sdCard.path').]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持插入和删除虚拟 SD (SecureDigital)卡。仿真程序使用存储在开发计算机上的可装载磁盘映像来模拟实际 SD 卡设备的分区(请参见 "hw.sdCard.path")。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SD Card image path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SD 卡映像路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the filename and path to an SD card partition image file on your development computer. For example, this path could be set to 'C:\\sd\\sdcard.img'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定开发计算机上 SD 卡分区图像文件的文件名和路径。例如，可将此路径设置为 "C:\\sd\\sdcard.img"。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TEMPERATURE_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Temperature support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[温度支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TEMPERATURE_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a temperature sensor. This sensor measures the temperature of the device in degrees Celsius (∞C).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持温度传感器。此传感器以摄氏度(∞C)为单位测量设备温度。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TOUCH_SCREEN_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Touch-screen support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[触摸屏支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TOUCH_SCREEN_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a touch screen. The touch screen is used for direct manipulation of objects on the screen.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持触摸屏。触摸屏用于直接操作屏幕上的对象。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TRACKBALL_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Trackball support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[跟踪球支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TRACKBALL_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a trackball. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否支持轨迹球。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_USE_EXT4_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[EXT4 file system support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[EXT4 文件系统支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_USE_EXT4_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device uses the Linux EXT4 file system for partitions. Because the file system type is now auto-detected, this optionis deprecated and ignored.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定仿真设备是否使用 Linux EXT4 文件系统进行分区。由于现在是自动检测文件系统类型，因此该选项已弃用和忽略。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";IniPropertyDetailsDefaultText" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Default: ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[默认: ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";IniPropertyDetailsUnknownPropertyText" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Unknown property]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[未知属性]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_NEW_DEVICE_NAMING_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Kernel new device naming]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[内核新设备命名]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_NEW_DEVICE_NAMING_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Used to specify whether the kernel requires a new device naming scheme. This is typically used with Linux 3.10 kernels and later. If set to 'autodetect', the emulator will automatically detect whether the kernel requires a new device naming scheme.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[用于指定内核是否需要新的设备命名方案。这通常用于 Linux 3.10 及更高版本的内核。如果设置为 "autodetect"，则仿真程序将自动检测内核是否需要新的设备命名方案。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PARAMETERS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Kernel parameters]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[内核参数]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PARAMETERS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the string of Linux kernel boot parameters. By default, this setting is left blank.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定 Linux 内核引导参数的字符串。默认情况下，此设置留空。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Kernel path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[内核路径]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the path to the Linux kernel. If this path is not specified, the emulator looks in the emulator system directory for 'kernel-ranchu'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定 Linux 内核的路径。如果未指定此路径，则仿真程序会在仿真程序系统目录中查找 "kernel-ranchu"。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_SUPPORTS_YAFFS2_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[YAFFS2 partition support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[YAFFS2 分区支持]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_SUPPORTS_YAFFS2_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the kernel supports YAFFS2 (Yet Another Flash File System 2) partitions. Typically, this applies only to kernels before Linux 3.10. If set to 'autodetect', the emulator will automatically detect whether the kernel can mount YAFFS2 file systems.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[确定内核是否支持 YAFFS2 (全称为: 另一个闪存文件系统 2)分区。通常情况下，这仅适用于 Linux 3.10 之前的内核。如果设置为 "autodetect"，则仿真程序将自动检测内核是否可以装载 YAFFS2 文件系统。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_LATENCY_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Emulated network latency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[仿真网络延迟]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_LATENCY_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sets the initial state of the simulated network transfer latency used by AVD.]A;Latency is the delay in processing data across the network.]A;The latency speed can also be adjusted in the emulator.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[设置 AVD 使用的模拟网络传输延迟的初始状态。]A;延迟指在网络中处理数据时产生的延迟。]A;延迟速度也可以在仿真器中进行调整。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_SPEED_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Emulated network speed]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[仿真网络速度]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_SPEED_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sets the initial state of the simulated network transfer rate used by AVD. ]A;The network speed can also be adjusted in the emulator.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[设置 AVD 使用的模拟网络传输速率的初始状态。]A;网络速度也可以在仿真器中进行调整。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";SDCARD_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SDCard size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[SDCard 大小]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";SDCARD_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the size of the virtual SD card file at the location specified by 'hw.sdCard.path'.  available on the device (in bytes). If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指定设备上可用的、位于由 "hw.sdCard.path" 指定的位置的虚拟 SD 卡文件的大小(以字节为单位)。如果大小是一个简单的整数，则指定大小时以字节为单位。还可以通过向大小追加 K、M 或 G，以 kb、mb、和 gb 为单位来指定大小。大小最小为 9M，最大为 1023G。]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";TAG_ID_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System image type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[系统映像类型]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";TAG_ID_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Indicates System image type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[指示系统映像类型]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+    </Item>
+  </Item>
+</LCX>

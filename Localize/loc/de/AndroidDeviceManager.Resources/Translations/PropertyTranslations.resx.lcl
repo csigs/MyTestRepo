@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LCX SchemaVersion="6.0" Name="D:\a\1\s\AndroidDeviceManager.Resources\Translations\PropertyTranslations.resx" PsrId="211" FileType="1" SrcCul="en-US" TgtCul="de-DE" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
+  <OwnedComments>
+    <Cmt Name="Dev" />
+    <Cmt Name="LcxAdmin" />
+    <Cmt Name="Rccx" />
+  </OwnedComments>
+  <Settings Name="@vsLocTools@\default.lss" Type="Lss" />
+  <Item ItemId=";PropertyTranslations.resx" ItemType="0" PsrId="211" Leaf="false">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+    <Item ItemId=";Strings" ItemType="0" PsrId="211" Leaf="false">
+      <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";ABI_TYPE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Abi type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ABI-Typ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ABI_TYPE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the ABI (application binary interface) type of the emulated device. The "x86" option is for the instruction set commonly referred to as "x86" or "IA-32". The "x86_64" option is for the 64-bit x86 instruction set. The "armeabi-v7a" option is for the ARM instruction set with v7-a ARM extensions. The 'arm64-v8a' option is for the ARM instruction set that supports AArch64.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird der ABI-Typ (Application Binary Interface) des emulierten Geräts angegeben. Die Option \"x86\" gilt für den Anweisungssatz, der im Allgemeinen als \"x86\" oder \"IA-32\" bezeichnet wird. Die Option \"x86_64\" gilt für den 64-Bit-x86-Anweisungssatz. Die Option \"armeabi-v7a\" gilt für den ARM-Anweisungssatz mit v7-a-ARM-Erweiterungen. Die Option \"arm64-v8a\" gilt für den ARM-Anweisungssatz, der AArch64 unterstützt.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_DYNAMIC_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Whether or not the skin is dynamic]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Gibt an, ob die Skin dynamisch ist.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_DYNAMIC_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The emulator skin is a dynamic skin if the emulator is to construct a skin of a given size based on a specified width and height.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die Emulatorskin ist dynamisch, wenn der Emulator eine Skin einer bestimmten Größe basierend auf einer angegebenen Breite und Höhe erstellen soll.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_NAME_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Skin name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skinname]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_NAME_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The name for an Android emulator skin. A skin is a collection of files that defines the visual and control elements of an emulator display.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Name für eine Skin des Android-Emulators. Eine Skin ist eine Sammlung von Dateien, die die visuellen Elemente und Steuerelemente einer Emulatoranzeige definiert.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Skin path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Skinpfad]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_SKIN_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the directory that contains the emulator skin files specified in 'skin.name'. This directory contains 'hardware.ini', layout files, and image files for the display elements of the skin.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Pfad zu dem Verzeichnis, das die in \"skin.name\" angegebenen Emulatorskindateien enthält. Dieses Verzeichnis enthält die Datei \"hardware.ini\", Layoutdateien und Bilddateien für die Anzeigeelemente der Skin.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_VM_HEAP_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maximum VM heap size]A;Higher values are required for high-dpi devices]A;Default will depend on RAM size.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Maximale Größe des VM-Heaps]A;Für Geräte mit hoher Auflösung sind höhere Werte erforderlich.]A;Der Standardwert richtet sich nach der RAM-Größe.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_INI_VM_HEAP_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the maximum virtual machine heap size (in megabytes) that a Dalvik application can allocate before it is killed by the system. Higher values are required for high-dpi devices. The default value depends upon RAM size.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die maximale Größe des Heaps für den virtuellen Computer (in Megabytes) angegeben, die eine Dalvik-Anwendung zuordnen kann, bevor sie vom System beendet wird. Für Geräte mit hoher Auflösung sind höhere Werte erforderlich. Der Standardwert richtet sich nach der RAM-Größe.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";AVD_NAME_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Name of the AVD being run]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Name des ausgeführten AVD]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache partition]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Cachepartition]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device will use a '/cache' partition on the device. The '/cache' partition (which is initially empty) is the location where Android stores frequently accessed data and app components. If set to 'no', the emulator will not use a '/cache' partition and the other 'disk.cache' settings will be ignored.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät eine /cache-Partition auf dem Gerät verwendet. Die /cache-Partition (die anfänglich leer ist) ist der Speicherort, an dem Android Daten und App-Komponenten speichert, auf die häufig zugegriffen wird. Bei Festlegung auf \"Nein\" verwendet der Emulator keine Partition \"/cache\", und die anderen Einstellungen für \"disk.cache\" werden ignoriert.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache partition path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Cachepartitionspfad]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies a cache partition image file on your development computer. The emulator will use this file for the '/cache' partition. Enter an absolute path or a path relative to the emulator's 'data' directory. If not set, the emulator creates an empty temporary file called 'cache.img' on your development computer. If the file does not exist, it is created as an empty file. This option is ignored if 'disk.cachePartition' is set to 'no'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird eine Imagedatei für eine Cachepartition auf Ihrem Entwicklungscomputer angegeben. Der Emulator verwendet diese Datei für die /cache-Partition. Geben Sie einen absoluten Pfad oder einen Pfad relativ zum data-Verzeichnis des Emulators ein. Wenn keine Datei festgelegt wird, erstellt der Emulator eine leere temporäre Datei mit dem Namen \"cache.img\" auf Ihrem Entwicklungscomputer. Wenn die Datei nicht vorhanden ist, wird sie als leere Datei erstellt. Diese Option wird ignoriert, wenn \"disk.cachePartition\" auf \"Nein\" festgelegt ist.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cache partition size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Cachepartitionsgröße]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_CACHE_PARTITION_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The size of the cache partition file (in bytes). Normally you do not need to set this option unless the app will be downloading very large files that are larger than the default cache size of 66 megabytes. This option is ignored if 'disk.cachePartition' is set to 'no'. If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die Größe der Cachepartitionsdatei (in Bytes). Normalerweise müssen Sie diese Option nur dann festlegen, wenn die App sehr große Dateien herunterlädt, die die Standardcachegröße von 66 MB überschreiten. Diese Option wird ignoriert, wenn \"disk.cachePartition\" auf \"Nein\" festgelegt ist. Wenn \"size\" eine einfache ganze Zahl ist, gibt sie die Größe in Bytes an. Sie können die Größe auch in Kilobytes, Megabytes und Gigabytes angeben, indem Sie \"K\", \"M\" oder \"G\" an die Größe anhängen. Die Mindestgröße ist 9M, und maximale Größe beträgt 1023G.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_INIT_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Initial path to the data partition]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anfänglicher Pfad zur Datenpartition]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_INIT_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the initial contents of the data partition. After wiping user data, the emulator copies the contents of the specified file to user data (bydefault, 'userdata-qemu.img') instead of using 'userdata.img' as the initial version.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird der anfängliche Inhalt der Datenpartition angegeben. Nach dem Löschen von Benutzerdaten kopiert der Emulator den Inhalt der angegebenen Datei in die Benutzerdaten (standardmäßig \"userdata-qemu.img\"), anstatt \"userdata.img\" als anfängliche Version zu verwenden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the data partition.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Pfad zur Datenpartition.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the user data partition file. To configurea persistent user data file, enter a filename and a path on your development computer. If the file doesn't exist, the emulator creates an image from the default file 'userdata.img', stores it in the filename specified by 'disk.dataPartition.path', and persists user data to it when the emulator shuts down. If you don't specify a path, the default file is named 'userdata-qemu.img'. The special value '<temp>' causes the emulator to create and use a temporary file. If 'disk.dataPartition.initPath' is set, its content will be copied to the 'disk.dataPartition.path' file at boot-time. Note that this option cannot be left blank.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die Partitionsdatei für Benutzerdaten angegeben. Um eine persistente Benutzerdatendatei zu konfigurieren, geben Sie einen Dateinamen und einen Pfad auf Ihrem Entwicklungscomputer ein. Wenn die Datei nicht vorhanden ist, erstellt der Emulator ein Image aus der Standarddatei \"userdata.img\", speichert dieses unter dem von \"disk.dataPartition.path\" angegebenen Dateinamen und speichert die Benutzerdaten beim Herunterfahren des Emulators dauerhaft darin. Wenn Sie keinen Pfad angeben, erhält die Standarddatei den Namen \"userdata-qemu.img\". Der spezielle Wert \"<temp>\" bewirkt, dass der Emulator eine temporäre Datei erstellt und verwendet. Wenn \"disk.dataPartition.initPath\" festgelegt ist, wird der zugehörige Inhalt zur Startzeit in die Datei \"disk.dataPartition.path\" kopiert. Beachten Sie, dass diese Option nicht leer gelassen werden darf.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Data partition size.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Datenpartitionsgröße.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_DATA_PARTITION_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the size of the user data partition in bytes. If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die Größe der Benutzerdatenpartition in Bytes angegeben. Wenn \"size\" eine einfache ganze Zahl ist, gibt sie die Größe in Bytes an. Sie können die Größe auch in Kilobytes, Megabytes und Gigabytes angeben, indem Sie \"K\", \"M\" oder \"G\" an die Größe anhängen. Die Mindestgröße ist 9M, und maximale Größe beträgt 1023G.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_RAMDISK_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Ramdisk path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ramdisk-Pfad]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_RAMDISK_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the boot partition (ramdisk) image. The ramdisk image is a subset of the system image that is loaded by the kernel before the system image is mounted. The ramdisk image typically contains boot-time binaries and initialization scripts. If this option is not specified, the default is 'ramdisk.img' in the emulator system directory.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Pfad zum Image der Startpartition (ramdisk). Das ramdisk-Image ist eine Teilmenge des Systemimage, das vom Kernel geladen wird, bevor das Systemimage eingebunden wird. Das ramdisk-Image enthält in der Regel Binärdateien und Initialisierungsskripts, die zur Startzeit benötigt werden. Wenn diese Option nicht angegeben wird, lautet der Standardwert im Emulatorsystemverzeichnis \"ramdisk.img\".]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SNAP_STORAGE_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Snapshot storage path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Speicherpfad für Momentaufnahmen]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SNAP_STORAGE_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the 'snapshot storage' file where all snapshots are stored. All snapshots made during execution will be saved to this file. Only snapshots that are saved to this file can berestored during the emulator run. If this optionis not specified, the default is 'snapshots.img' in the emulator data directory.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Pfad zur Datei \"snapshot storage\", in der alle Momentaufnahmen gespeichert werden. Alle während der Ausführung erstellten Momentaufnahmen werden in dieser Datei gespeichert. Nur Momentaufnahmen, die in dieser Datei gespeichert werden, können während der Ausführung des Emulators wiederhergestellt werden. Wenn diese Option nicht angegeben wird, lautet der Standardwert im Emulatordatenverzeichnis \"snapshots.img\".]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_INIT_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System partition init path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Initialisierungspfad der Systempartition]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_INIT_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the read-only copy of the system image file; specifically, the partition containing the system libraries and data corresponding to the API level and any variant. If this path is not specified, the default is 'system.img' in the emulator system directory.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Pfad zur schreibgeschützten Kopie der Systemimagedatei, also der Partition, die die Systembibliotheken und Daten enthält, die der API-Ebene und einer beliebigen Variante entsprechen. Wenn dieser Pfad nicht angegeben ist, lautet der Standardwert im Emulatorsystemverzeichnis \"system.img\".]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System partition path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Systempartitionspfad]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the read/write system partition image. If this path is not set, a temporary file will be created and initialized from the contents of the file specified by 'disk.systemPartition.initPath']]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Pfad zum Systempartitionsimage mit Lese-/Schreibzugriff. Wenn dieser Pfad nicht festgelegt ist, wird eine temporäre Datei erstellt und aus dem Inhalt der durch \"disk.systemPartition.initPath\" angegebenen Datei initialisiert.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System partition size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Systempartitionsgröße]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";DISK_SYSTEM_PARTITION_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The ideal size of the system partition (in bytes). The size is ignored if the actual system partition image is larger than this setting; otherwise, it specifies the maximum size that the system partition file can grow to. If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die ideale Größe der Systempartition (in Bytes). Die Größe wird ignoriert, wenn das tatsächliche Systempartitionsimage größer ist als diese Einstellung; andernfalls wird die maximal zulässige Größe der Systempartitionsdatei angegeben. Wenn \"size\" eine einfache ganze Zahl ist, gibt sie die Größe in Bytes an. Sie können die Größe auch in Kilobytes, Megabytes und Gigabytes angeben, indem Sie \"K\", \"M\" oder \"G\" an die Größe anhängen. Die Mindestgröße ist 9M, und maximale Größe beträgt 1023G.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_COLD_BOOT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Use cold boot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kaltstart verwenden]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_COLD_BOOT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start as from a power-up]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird das System wie beim Einschalten gestartet.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_FAST_BOOT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Use fast boot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Schnellstart verwenden]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_FAST_BOOT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start from the state that was saved when the device last exited]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird das System aus dem Zustand gestartet, der beim letzten Beenden des Geräts gespeichert wurde.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_SNAPSHOT_BOOT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start from snapshot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Von Momentaufnahme starten]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_FORCE_SNAPSHOT_BOOT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Start from the chosen snapshot]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird das System von der ausgewählten Momentaufnahme gestartet.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_SNAPSHOT_FILE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Snapshot file]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Momentaufnahmedatei]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FB_SNAPSHOT_FILE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Path to the snapshot file]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Pfad zur Momentaufnahmedatei.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ACCELEROMETER_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Accelerometer]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Beschleunigungsmesser]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ACCELEROMETER_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device contains an accelerometer sensor. The accelerometer helps the device determine orientation (used for auto-rotation). The accelerometer reports the acceleration of the device along three sensor axes.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät einen Beschleunigungsmessersensor enthält. Der Beschleunigungsmesser unterstützt das Gerät beim Bestimmen der Ausrichtung des Geräts (wird für die automatische Drehung verwendet). Der Beschleunigungsmesser meldet die Beschleunigung des Geräts an drei Sensorachsen.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ARC_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Chrome OS device (App Runtime for Chrome)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Chrome-Betriebssystemgerät (App-Laufzeit für Chrome)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ARC_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device is a Chrome OS machine.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob es sich bei dem emulierten Gerät um einen Computer mit Chrome-Betriebssystem handelt.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_INPUT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Audio recording support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für Audioaufnahmen]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_INPUT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device can record audio.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät Audiodaten aufzeichnen kann.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_OUTPUT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Audio playback support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für Audiowiedergabe]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_AUDIO_OUTPUT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device can play audio.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät Audiodaten wiedergeben kann.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_BATTERY_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Battery support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für Akku]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_BATTERY_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device can run on a battery.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät mit einem Akku betrieben werden kann.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Camera support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kameraunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_BACK_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Back-facing camera]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hintere Kamera]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_BACK_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the back-facing camera (the lens faces away from the user). If you are using a webcam on your development computer to simulate the back-facing camera on the emulated device, this value must be set to 'webcam<N>', where 'N' selects the webcam (if you have only one webcam, choose 'webcam0'). If set to 'emulated', the emulator simulates the camera in software. To disable the back-facing camera, set this value to 'none'. If you enable the back-facing camera, be sure to also enable 'Camera support'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die nach hinten gerichtete Kamera konfiguriert (die Linse zeigt vom Benutzer weg). Wenn Sie eine Webcam auf Ihrem Entwicklungscomputer verwenden, um die hintere Kamera auf dem emulierten Gerät zu simulieren, muss dieser Wert auf \"webcam<N>\" festgelegt werden, wobei \"N\" die Webcam auswählt (wenn Sie nur eine Webcam haben, wählen Sie \"webcam0\" aus). Bei Festlegung auf \"Emuliert\" simuliert der Emulator die Kamera in der Software. Um die hintere Kamera zu deaktivieren, legen Sie diesen Wert auf \"Keine\" fest. Wenn Sie die hintere Kamera aktivieren, müssen Sie auch \"Kameraunterstützung\" aktivieren.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device has a camera.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät über eine Kamera verfügt.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_FRONT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Front-facing camera]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Vordere Kamera]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_FRONT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the front-facing camera (the lens faces towards the user). If you are using a webcam on your development computer to simulate the front-facing camera on the emulated device, this value must be set to 'webcam<N>', where 'N' selects the webcam (if you have only one webcam, choose 'webcam0'). If set to 'emulated', the emulator simulates a camera in software. To disable the the front-facing camera, set this value to 'none'. If you enable the front-facing camera, be sure to also enable 'Camera support'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die nach vorne gerichtete Kamera konfiguriert (die Linse zeigt zum Benutzer hin). Wenn Sie eine Webcam auf Ihrem Entwicklungscomputer verwenden, um die vordere Kamera auf dem emulierten Gerät zu simulieren, muss dieser Wert auf \"webcam<N>\" festgelegt werden, wobei \"N\" die Webcam auswählt (wenn Sie nur eine Webcam haben, wählen Sie \"webcam0\" aus). Bei Festlegung auf \"Emuliert\" simuliert der Emulator die Kamera in der Software. Um die vordere Kamera zu deaktivieren, legen Sie diesen Wert auf \"Keine\" fest. Wenn Sie die vordere Kamera aktivieren, müssen Sie auch \"Kameraunterstützung\" aktivieren.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_HORIZONTAL_PIXELS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maximum horizontal camera pixels]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Maximale horizontale Kamerapixel]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_HORIZONTAL_PIXELS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the maximum horizontal resolution of the emulated device's camera (in pixels).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die maximale horizontale Auflösung der Kamera des emulierten Geräts konfiguriert (in Pixeln).]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_VERTICAL_PIXELS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Maximum vertical camera pixels]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Maximale vertikale Kamerapixel]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CAMERA_MAX_VERTICAL_PIXELS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the maximum vertical resolution of the emulated device's camera (in pixels).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die maximale vertikale Auflösung der Kamera des emulierten Geräts konfiguriert (in Pixeln).]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_ARCH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU Architecture]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU-Architektur]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_ARCH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The CPU architecture to be emulated by the virtual device. If you are using Intel HAXM for hardware acceleration, select 'x86' for a 32-bitCPU. Select 'x86_64' for a 64-bit HAXM-accelerated device. (Be sure to install the corresponding Intel x86 system image in the SDK Manager: for example, 'Intel x86 Atom' or 'Intel x86 Atom_64') To simulate an ARM CPU, select 'arm' for 32-bit or select 'arm64' for a 64-bit ARM CPU. Keep in mind that ARM-based virtual devices will run much slower than those that are x86-based because hardware acceleration is not available for ARM.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die CPU-Architektur, die vom virtuellen Gerät emuliert werden soll. Wenn Sie Intel HAXM für die Hardwarebeschleunigung verwenden, wählen Sie \"x86\" für eine 32-Bit-CPU aus. Wählen Sie \"x86_64\" für ein 64-Bit-HAXM-beschleunigtes Gerät aus. (Stellen Sie sicher, dass Sie das entsprechende Intel-x86-Systemimage im SDK-Manager installieren: z. B. \"Intel x86 Atom\" oder \"Intel x86 Atom_64\".) Um eine ARM-CPU zu simulieren, wählen Sie \"arm\" für eine 32-Bit-ARM-CPU oder \"arm64\" für eine 64-Bit-ARM-CPU aus. Denken Sie daran, dass ARM-basierte virtuelle Geräte wesentlich langsamer ausgeführt werden als x86-basierte Geräte, weil für ARM keine Hardwarebeschleunigung verfügbar ist.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_MODEL_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[CPU model]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[CPU-Modell]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_MODEL_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[This value is normally left unset (it will be set to a value that is derived from 'hw.cpu.arch' if it is not explicitly set). However, it can be set to an emulator-specific string for experimental use.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Dieser Wert wird normalerweise nicht festgelegt (er wird auf einen Wert festgelegt, der von \"hw.cpu.arch\" abgeleitet wird, wenn er nicht explizit festgelegt ist). Er kann jedoch zur experimentellen Verwendung auf eine emulatorspezifische Zeichenfolge festgelegt werden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_NCORE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Number of CPU Cores]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anzahl von CPU-Kernen]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_CPU_NCORE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Select the number of processor cores on your computer that you’d like to use for the emulator. Using more processor cores speeds up the emulator.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wählen Sie die Anzahl von Prozessorkernen auf Ihrem Computer aus, die Sie für den Emulator verwenden möchten. Durch die Verwendung einer größeren Anzahl von Prozessorkernen wird der Emulator beschleunigt.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_DPAD_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[DPad keys]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Steuerkreuztasten]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_DPAD_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports directional pad (DPad) keys. A DPad typically has four keys to indicate directional control.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät Tasten eines Steuerkreuzes unterstützt. Ein Steuerkreuz besitzt in der Regel vier Tasten zur direktionalen Steuerung.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[GPS support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[GPS-Unterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device has a GPS (Global Positioning System) receiver.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät über einen GPS-Empfänger (Global Positioning System) verfügt.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_EMULATION_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Hardware OpenGLES emulation support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für Hardware-OpenGLES-Emulation]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_EMULATION_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports GPU emulation. When enabled, GPU emulation uses Open GL for Embedded Systems (OpenGL ES) for rendering both 2D and 3D graphics on the screen, and the associated GPU Emulation Mode setting determines how the GPU emulation is implemented.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät eine GPU-Emulation unterstützt. Wenn diese Option aktiviert ist, verwendet die GPU-Emulation Open GL for Embedded Systems (OpenGLES) zum Rendern von 2D- und 3D-Bildern auf dem Bildschirm, und die zugeordnete Einstellung für den GPU-Emulationsmodus bestimmt, wie die GPU-Emulation implementiert wird.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_MODE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[GPU emulation mode]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[GPU-Emulationsmodus]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GPU_MODE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines how GPU emulation is implemented by the emulator. If you select 'auto', the emulator will choose hardware and software acceleration based on your development computer setup. If you select 'host', the emulator will use your development computer's graphics processor to perform GPU emulation for faster rendering. If you select 'mesa', the emulator will use the Mesa 3D software library to render graphics. Select 'mesa' if you have problems rendering via your development computer's graphics processor. The 'swiftshader' mode can be used to render graphics in software (with slightly less performance than using your computer's GPU). The 'off' option (disable graphics hardware emulation) is a deprecated option that can cause improper rendering for some items and is therefore not recommended.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, wie die GPU-Emulation vom Emulator implementiert wird. Wenn Sie \"Auto\" auswählen, wählt der Emulator die Hardware- und Softwarebeschleunigung basierend auf dem Setup Ihres Entwicklungscomputers aus. Wenn Sie \"Host\" auswählen, verwendet der Emulator den Grafikprozessor Ihres Entwicklungscomputers, um eine GPU-Emulation für ein schnelleres Rendering durchzuführen. Wenn Sie \"Mesa\" auswählen, verwendet der Emulator die Mesa 3D-Softwarebibliothek zum Rendern von Grafiken. Wählen Sie \"Mesa\" aus, wenn beim Rendern über den Grafikprozessor Ihres Entwicklungscomputers Probleme auftreten. Der Modus \"SwiftShader\" kann zum Rendern von Grafiken in der Software verwendet werden (mit einer etwas niedrigeren Leistung als bei der GPU des Computers). Die Option \"Aus\" (Deaktivieren der Emulation der Grafikhardware) ist eine veraltete Option, die bei einigen Elementen ein unzulässiges Rendering verursachen kann und daher nicht empfohlen wird.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GSM_MODEM_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[GSM modem support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für GSM-Modem]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_GSM_MODEM_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device includes a modem that supports the GSM (Global System for Mobile Communications) telephony radio system.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät ein Modem enthält, das das GSM-Telefonfunksystem (Global System for Mobile Communications) unterstützt.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_INITIAL_ORIENTATION_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Initial screen orientation]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Anfängliche Bildschirmausrichtung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_INITIAL_ORIENTATION_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Configures the initial orientation of the screen on the emulated device (portrait or landscape mode). In portrait mode, the screen is taller than it is wide. In landscape mode, the screen is wider than it is tall. When running the emulated device, you can change the orientation if both portrait and landscape are supported in the device profile.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die anfängliche Ausrichtung des Bildschirms auf dem emulierten Gerät konfiguriert (Hochformat oder Querformat). Im Hochformatmodus ist der Bildschirm höher als breit. Im Querformatmodus ist der Bildschirm breiter als hoch. Wenn das emulierte Gerät ausgeführt wird, können Sie die Ausrichtung ändern, wenn sowohl Hochformat als auch Querformat im Geräteprofil unterstützt werden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Keyboard support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Tastaturunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_CHARMAP_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Keyboard charmap name]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Name der Tastaturzeichentabelle]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_CHARMAP_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The name of the hardware charmap for this device.]A;]A;NOTE: This should always be the default 'qwerty2' unless you have modified the system image accordingly. This name is sent to the kernel at boot time. Using an incorrect name will result in an unusable machine.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Der Name der Hardwarezeichentabelle für dieses Gerät.]A;]A;HINWEIS: Dies sollte immer der Standardwert \"qwerty2\" sein, es sei denn, Sie haben das Systemimage entsprechend geändert. Dieser Name wird zur Startzeit an den Kernel gesendet. Bei Verwendung eines falschen Namens kann der Computer nicht verwendet werden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a QWERTY keyboard.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät eine QWERTY-Tastatur unterstützt.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_LID_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Keyboard lid support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für Tastaturabdeckung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_KEYBOARD_LID_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[If keyboard support is enabled, this setting determines whether the QWERTY keyboard can be closed/hidden or opened/visible. This setting willbe ignored if 'hw.keyboard' is set to 'false'.]A;    ]A;NOTE: the default value is 'false' if the emulated device targets API level 12 or higher.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Wenn die Tastaturunterstützung aktiviert ist, legt diese Einstellung fest, ob die QWERTY-Tastatur geschlossen/ausgeblendet oder geöffnet/sichtbar sein kann. Diese Einstellung wird ignoriert, wenn \"hw.keyboard\" auf \"false\" festgelegt ist.]A;    ]A;HINWEIS: Der Standardwert ist \"false\", wenn das emulierte Gerät auf die API-Ebene 12 oder höher ausgerichtet ist.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_BACKLIGHT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD backlight]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD-Hintergrundbeleuchtung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_BACKLIGHT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether an LCD backlight is simulated by the emulated device.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob durch das emulierte Gerät eine LCD-Hintergrundbeleuchtung simuliert wird.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DENSITY_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD density]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD-Dichte]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DENSITY_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The density of the emulated LCD display, measured in density-independent pixels, or 'dp' (dp is a virtual pixel unit). When the setting is 160 dp, each dp corresponds to one physical pixel. At runtime, Android uses this value to select and scale the appropriate resources/assets for correct display rendering.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die Dichte der emulierten LCD-Anzeige, gemessen in dichteunabhängigen Pixeln bzw. \"dp\" (\"dp\" ist eine virtuelle Pixeleinheit). Wenn die Einstellung 160 dp lautet, entspricht jedes dp einem physischen Pixel. Zur Laufzeit verwendet Android diesen Wert, um die geeigneten Ressourcen/Medienobjekte für eine korrekt gerenderte Anzeige auszuwählen und zu skalieren.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DEPTH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD color depth]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD-Farbtiefe]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_DEPTH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The color bit-depth of the emulated framebuffer that holds the bitmap for driving the LCD display. This value can be 16 bits (65,536 possible colors) or 32 bits (16,777,216 colors plus transparency). The 32-bit setting can make the emulator run slightly slower but with better color accuracy.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die Farbtiefe des emulierten Framebuffers, der die Bitmap zum Steuern der LCD-Anzeige enthält. Dieser Wert kann 16 Bits (65,536 mögliche Farben) oder 32 Bits (16,777,216 Farben plus Transparenz) sein. Mit der 32-Bit-Einstellung kann der Emulator etwas langsamer, aber mit besserer Farbgenauigkeit ausgeführt werden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_HEIGHT_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD pixel height]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD-Pixelhöhe]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_HEIGHT_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The number of pixels that make up the vertical dimension of the emulated LCD display.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die Anzahl von Pixeln, aus denen die vertikale Abmessung der emulierten LCD-Anzeige besteht.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_WIDTH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[LCD pixel width]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[LCD-Pixelbreite]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_LCD_WIDTH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The number of pixels that make up the horizontal dimension of the emulated LCD display.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die Anzahl von Pixeln, aus denen die horizontale Abmessung der emulierten LCD-Anzeige besteht.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAGNETIC_FIELD_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Magnetic Field Sensor]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Magnetfeldsensor]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAGNETIC_FIELD_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a magnetic field sensor. The magnetic field sensor (also known as magnetometer) reports the ambient geomagnetic field as measured along three sensor axes. Enable this setting for apps that need access to a compass reading. For example, a navigation app might use this sensor to detect which direction the user faces.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät einen Magnetfeldsensor unterstützt. Ein Magnetfeldsensor (auch als Magnetometer bezeichnet) meldet Daten zum Geomagnetfeld der Umgebung, das an drei Sensorachsen gemessen wird. Aktivieren Sie diese Einstellung für Apps, die Zugriff auf Kompassmesswerte benötigen. Beispielsweise kann eine Navigations-App diesen Sensor verwenden, um zu ermitteln, in welche Richtung ein Benutzer sein Gerät hält.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAINKEYS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[THardware Back/Home keys]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[THardware-Tasten \"Zurück\"/\"Homepage\"]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_MAINKEYS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports hardware Back and Home navigation buttons. You can set this value to 'yes' if the buttons are implemented only in software. If 'hw.mainKeys' is set to 'yes', the emulator will not display navigation buttons on the screen, but you can use the emulator side panel to "press" these buttons.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät Hardwarenavigationstasten für \"Zurück\" und \"Homepage\" unterstützt. Sie können diesen Wert auf \"Ja\" festlegen, wenn die Tasten nur als Schaltflächen in der Software implementiert sind. Wenn \"hw.mainKeys\" auf \"Ja\" festgelegt ist, zeigt der Emulator keine Navigationsschaltflächen auf dem Bildschirm an, aber Sie können den Seitenbereich des Emulators verwenden, um diese Tasten zu \"drücken\".]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ORIENTATION_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Orientation support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ausrichtungsunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_ORIENTATION_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device provides orientation sensor values. The orientation sensor measures degrees of rotation that a device makes around all three physical axes (x, y, z). Note that the orientation sensor was deprecated as of Android 2.2 (API level 8).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät Ausrichtungssensorwerte bereitstellt. Der Ausrichtungssensor misst, um wie viel Grad ein Gerät um alle drei physischen Achsen (x, y, z) gedreht wird. Beachten Sie, dass der Ausrichtungssensor ab Android 2.2 (API-Ebene 8) veraltet ist.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_PROXIMITY_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Proximity support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Näherungsunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_PROXIMITY_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a proximity sensor. This sensor measures the proximity of an object relative to the view screen of a device. This sensor is typically used to determine whether a handset is being held up to aperson's ear.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät einen Näherungssensor unterstützt. Dieser Sensor misst die Nähe eines Objekts relativ zum Display eines Geräts. Dieser Sensor wird häufig verwendet, um zu bestimmen, ob ein Mobilteil an das Ohr einer Person gehalten wird.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_RAM_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Device RAM size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[RAM-Größe des Geräts]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_RAM_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[The amount of physical RAM on the emulated device, in megabytes. The default value will be computed from the screen size or the skin version. Increasing the size can provide faster emulator operation, but at the expense of demanding more resources from your development computer.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Die Menge an physischem RAM auf dem emulierten Gerät in Megabytes. Der Standardwert wird anhand der Bildschirmgröße oder der Skinversion berechnet. Höhere Werte können Emulatorvorgänge beschleunigen, benötigen jedoch mehr Ressourcen auf Ihrem Entwicklungscomputer.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SCREEN_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Touch screen type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Touchscreentyp]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SCREEN_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Defines the type of screen on the emulated device. A 'multi-touch' screen can track two or more fingers on the touch interface. A 'touch' screen can detect only single-finger touch events. A 'no-touch' screen does not detect touch events.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird der Bildschirmtyp auf dem emulierten Gerät definiert. Mit einem Multitouchbildschirm kann die Bewegung von zwei oder mehr Fingern auf der Touchoberfläche nachverfolgt werden. Ein Touchbildschirm kann nur Berührungen durch einen einzigen Finger erfassen. Ein Bildschirm ohne Touchfunktion erkennt keine Berührungsereignisse.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SDCard support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für SD-Karten]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports insertion and removal of virtual SD (SecureDigital) cards. The emulator uses mountable disk images stored on your development computer to simulate the partitions of actual SD card devices (see 'hw.sdCard.path').]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät das Einlegen und Entfernen virtueller SD-Karten (SecureDigital) unterstützt. Der Emulator verwendet Datenträgerimages, die auf Ihrem Entwicklungscomputer gespeichert sind und eingebunden werden können, um die Partitionen tatsächlicher SD-Kartengeräte zu simulieren (siehe \"hw.sdCard.path\").]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SD Card image path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Imagepfad für SD-Karte]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_SDCARD_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the filename and path to an SD card partition image file on your development computer. For example, this path could be set to 'C:\\sd\\sdcard.img'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit werden der Dateiname und der Pfad zur Imagedatei einer SD-Kartenpartition auf Ihrem Entwicklungscomputer angegeben. Dieser Pfad kann z. B. auf \"C:\\sd\\sdcard.img\" festgelegt werden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TEMPERATURE_SENSOR_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Temperature support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Temperaturunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TEMPERATURE_SENSOR_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a temperature sensor. This sensor measures the temperature of the device in degrees Celsius (∞C).]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät einen Temperatursensor unterstützt. Dieser Sensor misst die Temperatur des Geräts in Grad Celsius (°C).]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TOUCH_SCREEN_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Touch-screen support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Touchscreenunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TOUCH_SCREEN_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a touch screen. The touch screen is used for direct manipulation of objects on the screen.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät einen Touchscreen unterstützt. Der Touchscreen wird für die direkte Bearbeitung von Objekten auf dem Bildschirm verwendet.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TRACKBALL_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Trackball support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Trackballunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_TRACKBALL_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device supports a trackball. ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät einen Trackball unterstützt. ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_USE_EXT4_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[EXT4 file system support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[EXT4-Dateisystemunterstützung]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";HW_USE_EXT4_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the emulated device uses the Linux EXT4 file system for partitions. Because the file system type is now auto-detected, this optionis deprecated and ignored.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob das emulierte Gerät das Linux EXT4-Dateisystem für Partitionen verwendet. Da der Dateisystemtyp jetzt automatisch erkannt wird, ist diese Option veraltet und wird ignoriert.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";IniPropertyDetailsDefaultText" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Default: ]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Standard: ]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";IniPropertyDetailsUnknownPropertyText" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Unknown property]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unbekannte Eigenschaft]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_NEW_DEVICE_NAMING_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Kernel new device naming]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Benennung neuer Geräte im Kernel]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_NEW_DEVICE_NAMING_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Used to specify whether the kernel requires a new device naming scheme. This is typically used with Linux 3.10 kernels and later. If set to 'autodetect', the emulator will automatically detect whether the kernel requires a new device naming scheme.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird angegeben, ob der Kernel ein Benennungsschema für neue Geräte erfordert. Dies wird normalerweise mit Linux 3.10-Kerneln und höher verwendet. Bei Festlegung auf \"Automatische Erkennung\" erkennt der Emulator automatisch, ob ein Benennungsschema für neue Geräte für den Kernel erforderlich ist.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PARAMETERS_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Kernel parameters]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kernelparameter]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PARAMETERS_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the string of Linux kernel boot parameters. By default, this setting is left blank.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die Zeichenfolge von Linux-Kernelstartparametern angegeben. Standardmäßig bleibt diese Einstellung leer.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PATH_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Kernel path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Kernelpfad]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_PATH_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the path to the Linux kernel. If this path is not specified, the emulator looks in the emulator system directory for 'kernel-ranchu'.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird der Pfad zum Linux-Kernel angegeben. Wenn dieser Pfad nicht angegeben ist, sucht der Emulator im Emulatorsystemverzeichnis nach \"kernel-ranchu\".]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_SUPPORTS_YAFFS2_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[YAFFS2 partition support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Unterstützung für YAFFS2-Partitionen]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";KERNEL_SUPPORTS_YAFFS2_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Determines whether the kernel supports YAFFS2 (Yet Another Flash File System 2) partitions. Typically, this applies only to kernels before Linux 3.10. If set to 'autodetect', the emulator will automatically detect whether the kernel can mount YAFFS2 file systems.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird bestimmt, ob der Kernel YAFFS2-Partitionen (Yet Another Flash File System 2) unterstützt. Dies gilt in der Regel nur für Kernel vor Linux 3.10. Bei Festlegung auf \"Automatische Erkennung\" erkennt der Emulator automatisch, ob der Kernel YAFFS2-Dateisysteme einbinden kann.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_LATENCY_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Emulated network latency]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Emulierte Netzwerklatenz]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_LATENCY_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sets the initial state of the simulated network transfer latency used by AVD.]A;Latency is the delay in processing data across the network.]A;The latency speed can also be adjusted in the emulator.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird der anfängliche Zustand der simulierten Netzwerkübertragungslatenz festgelegt, die vom AVD verwendet wird.]A;Die Latenz ist die Verzögerung bei der Verarbeitung von Daten im gesamten Netzwerk.]A;Die Latenzgeschwindigkeit kann auch im Emulator angepasst werden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_SPEED_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Emulated network speed]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Emulierte Netzwerkgeschwindigkeit]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";RUNTIME_NETWORK_SPEED_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sets the initial state of the simulated network transfer rate used by AVD. ]A;The network speed can also be adjusted in the emulator.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird der anfängliche Zustand der simulierten Netzwerkübertragungsrate festgelegt, die vom AVD verwendet wird. ]A;Die Netzwerkgeschwindigkeit kann auch im Emulator angepasst werden.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";SDCARD_SIZE_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[SDCard size]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Größe der SD-Karte]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";SDCARD_SIZE_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Specifies the size of the virtual SD card file at the location specified by 'hw.sdCard.path'.  available on the device (in bytes). If size is a simple integer, it specifies the size in bytes. You can also specify the size in kilobytes, megabytes, and gigabytes by appending K, M, or G to size. The minimum size is 9M and the maximum size is 1023G.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird die auf dem Gerät verfügbare Größe der virtuellen SD-Kartendatei an dem durch \"hw.sdCard.path\" angegebenen Speicherort angegeben (in Bytes). Wenn \"size\" eine einfache ganze Zahl ist, gibt sie die Größe in Bytes an. Sie können die Größe auch in Kilobytes, Megabytes und Gigabytes angeben, indem Sie \"K\", \"M\" oder \"G\" an die Größe anhängen. Die Mindestgröße ist 9M, und maximale Größe beträgt 1023G.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";TAG_ID_Abstract" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[System image type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Systemimagetyp]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";TAG_ID_Description" ItemType="0;.resx" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Indicates System image type]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Hiermit wird der Systemimagetyp angegeben.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+    </Item>
+  </Item>
+</LCX>
